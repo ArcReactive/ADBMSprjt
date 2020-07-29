@@ -84,11 +84,11 @@
     <Compile Include="EmployeeAddForm.Designer.cs">
       <DependentUpon>EmployeeAddForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmployeeDeavtivateForm.cs">
+    <Compile Include="EmployeeDeacvtivateForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmployeeDeavtivateForm.Designer.cs">
-      <DependentUpon>EmployeeDeavtivateForm.cs</DependentUpon>
+    <Compile Include="EmployeeDeacvtivateForm.Designer.cs">
+      <DependentUpon>EmployeeDeacvtivateForm.cs</DependentUpon>
     </Compile>
     <Compile Include="EmployeeDetailsForm.cs">
       <SubType>Form</SubType>
@@ -143,8 +143,8 @@
     <EmbeddedResource Include="EmployeeAddForm.resx">
       <DependentUpon>EmployeeAddForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmployeeDeavtivateForm.resx">
-      <DependentUpon>EmployeeDeavtivateForm.cs</DependentUpon>
+    <EmbeddedResource Include="EmployeeDeacvtivateForm.resx">
+      <DependentUpon>EmployeeDeacvtivateForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeDetailsForm.resx">
       <DependentUpon>EmployeeDetailsForm.cs</DependentUpon>

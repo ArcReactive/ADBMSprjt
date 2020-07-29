@@ -1,6 +1,6 @@
 ﻿namespace ADBMSpro01
 {
-    partial class EmployeeDeavtivateForm
+    partial class EmployeeDeacvtivateForm
     {
         /// <summary>
         /// Required designer variable.

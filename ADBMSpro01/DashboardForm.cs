@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//author @NuwanSudusinghe
 namespace ADBMSpro01
 {
     public partial class DashboardForm : Form
@@ -119,19 +119,42 @@ namespace ADBMSpro01
             SalesChart.LegendLocation = LegendLocation.Right;
 
 
+            //ALL PRODUCTS chart.
+            myCon = dbcon.setCon();
+
+            using (myCon)
+            {
+
+                SqlCommand cmd1 = new SqlCommand("GetAllProductThisMonth", myCon);
+                cmd1.CommandType = CommandType.StoredProcedure;
+                DR = cmd1.ExecuteReader();
 
 
+                ColumnSeries col = new ColumnSeries() { DataLabels = true, Values = new ChartValues<int>() };
 
+                Axis ax = new Axis();
 
+                ax.Labels = new List<string>();
 
+                //int i = 0;
+                while (DR.Read() /*&& i!=20*/)
+                {
+                    int value = (int)DR.GetInt32(1);
+                    col.Values.Add(value);
+                    String name = (String)DR.GetString(0);
+                    ax.Labels.Add(name);
+                    //i++;
+                }
+                AllproductChart.Series.Add(col);
+                AllproductChart.AxisX.Add(ax);
+                AllproductChart.AxisY.Add(new Axis
+                {
+                    Title = "QTY",
+                    LabelFormatter = value => value.ToString()
+                });
 
-
-
-
-
-
-
-
+                DR = null;
+            }
         }
     }
 }

@@ -13,7 +13,18 @@ namespace ADBMSpro01
 {
     class DBconnection
     {
+        //connection.
+        public static SqlConnection myCon = null;
 
-        
+
+        //set connection path.
+        public SqlConnection setCon()
+        {
+            myCon = new SqlConnection("Data Source=DESKTOP-UKFGO45;Initial Catalog=ADBMSpro1;Integrated Security=True");
+            myCon.Open();
+
+            return myCon;
+        }
+
     }
 }

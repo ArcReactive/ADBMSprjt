@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ADBMSpro01
 {
-    public partial class EmployeeDeavtivateForm : Form
+    public partial class EmployeeDeacvtivateForm : Form
     {
-        public EmployeeDeavtivateForm()
+        public EmployeeDeacvtivateForm()
         {
             InitializeComponent();
         }

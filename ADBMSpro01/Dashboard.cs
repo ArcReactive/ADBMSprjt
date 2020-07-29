@@ -139,7 +139,7 @@ namespace ADBMSpro01
 
         private void DeactivateBtn_Click(object sender, EventArgs e)
         {
-            openFormPanel(new EmployeeDeavtivateForm());
+            openFormPanel(new EmployeeDeacvtivateForm());
         }
 
         private void AddEmployeeBtn_Click(object sender, EventArgs e)

@@ -48,6 +48,7 @@
             this.Controls.Add(this.label1);
             this.Name = "EmployeeDetailsForm";
             this.Text = "EmployeeDetailsForm";
+            this.Load += new System.EventHandler(this.EmployeeDetailsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

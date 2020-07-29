@@ -16,5 +16,10 @@ namespace ADBMSpro01
         {
             InitializeComponent();
         }
+
+        private void EmployeeDetailsForm_Load(object sender, EventArgs e)
+        {
+            //Hi kavi....
+        }
     }
 }

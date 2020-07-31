@@ -1,0 +1,13 @@
+C:\Users\ASUS\source\repos\Proj1\bin\Debug\Proj1.exe.config
+C:\Users\ASUS\source\repos\Proj1\bin\Debug\Proj1.exe
+C:\Users\ASUS\source\repos\Proj1\bin\Debug\Proj1.pdb
+C:\Users\ASUS\source\repos\Proj1\obj\Debug\Proj1.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\Proj1\obj\Debug\Proj1.Form1.resources
+C:\Users\ASUS\source\repos\Proj1\obj\Debug\Proj1.Properties.Resources.resources
+C:\Users\ASUS\source\repos\Proj1\obj\Debug\Proj1.csproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\Proj1\obj\Debug\Proj1.exe
+C:\Users\ASUS\source\repos\Proj1\obj\Debug\Proj1.pdb
+C:\Users\ASUS\source\repos\Proj1\obj\Debug\Proj1.Home.resources
+C:\Users\ASUS\source\repos\Proj1\obj\Debug\Proj1.singn_up.resources
+C:\Users\ASUS\source\repos\Proj1\obj\Debug\Proj1.PasswordReset.resources
+C:\Users\ASUS\source\repos\Proj1\obj\Debug\Proj1.csproj.CoreCompileInputs.cache

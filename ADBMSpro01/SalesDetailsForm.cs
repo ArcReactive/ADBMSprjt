@@ -215,7 +215,7 @@ namespace ADBMSpro01
             Top5Chart.AxisY.Add(new Axis
             {
                 Title = "Quantity",
-                LabelFormatter = value => value.ToString("C")
+                LabelFormatter = value => value.ToString()
             });
 
             Top5Chart.LegendLocation = LegendLocation.Right;

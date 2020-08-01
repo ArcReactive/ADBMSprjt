@@ -48,14 +48,15 @@
             this.WelcomeDetailsPanel = new System.Windows.Forms.Panel();
             this.Datelbl = new System.Windows.Forms.Label();
             this.UserNamelbl = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.FormLoadPanel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MainPanel.SuspendLayout();
             this.MarketingSubPanel.SuspendLayout();
             this.EmployeeSubPanel.SuspendLayout();
             this.SalesSubPanel.SuspendLayout();
             this.WelcomeDetailsPanel.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,6 +64,7 @@
             // 
             this.MainPanel.AutoScroll = true;
             this.MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(40)))));
+            this.MainPanel.Controls.Add(this.panel1);
             this.MainPanel.Controls.Add(this.ContactBtn);
             this.MainPanel.Controls.Add(this.MarketingSubPanel);
             this.MainPanel.Controls.Add(this.MarketingBtn);
@@ -76,7 +78,7 @@
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.MainPanel.Location = new System.Drawing.Point(0, 0);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(200, 556);
+            this.MainPanel.Size = new System.Drawing.Size(200, 559);
             this.MainPanel.TabIndex = 17;
             // 
             // ContactBtn
@@ -320,6 +322,7 @@
             // DashboardBtn
             // 
             this.DashboardBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DashboardBtn.FlatAppearance.BorderSize = 0;
             this.DashboardBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DashboardBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DashboardBtn.ForeColor = System.Drawing.SystemColors.ButtonShadow;
@@ -335,10 +338,9 @@
             // 
             // WelcomeDetailsPanel
             // 
-            this.WelcomeDetailsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.WelcomeDetailsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(40)))));
             this.WelcomeDetailsPanel.Controls.Add(this.Datelbl);
             this.WelcomeDetailsPanel.Controls.Add(this.UserNamelbl);
-            this.WelcomeDetailsPanel.Controls.Add(this.label1);
             this.WelcomeDetailsPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.WelcomeDetailsPanel.Location = new System.Drawing.Point(0, 0);
             this.WelcomeDetailsPanel.Name = "WelcomeDetailsPanel";
@@ -350,7 +352,7 @@
             this.Datelbl.AutoSize = true;
             this.Datelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Datelbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Datelbl.Location = new System.Drawing.Point(60, 48);
+            this.Datelbl.Location = new System.Drawing.Point(12, 9);
             this.Datelbl.Name = "Datelbl";
             this.Datelbl.Size = new System.Drawing.Size(44, 20);
             this.Datelbl.TabIndex = 2;
@@ -361,22 +363,11 @@
             this.UserNamelbl.AutoSize = true;
             this.UserNamelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNamelbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.UserNamelbl.Location = new System.Drawing.Point(60, 15);
+            this.UserNamelbl.Location = new System.Drawing.Point(12, 43);
             this.UserNamelbl.Name = "UserNamelbl";
             this.UserNamelbl.Size = new System.Drawing.Size(51, 20);
             this.UserNamelbl.TabIndex = 1;
             this.UserNamelbl.Text = "Name";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(12, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Hi :";
             // 
             // FormLoadPanel
             // 
@@ -385,13 +376,23 @@
             this.FormLoadPanel.Size = new System.Drawing.Size(1002, 509);
             this.FormLoadPanel.TabIndex = 18;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(40)))));
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 593);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(183, 81);
+            this.panel1.TabIndex = 30;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::ADBMSpro01.Properties.Resources._6785982_preview;
+            this.pictureBox1.BackgroundImage = global::ADBMSpro01.Properties.Resources.logout;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(1182, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(74, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(37, 35);
             this.pictureBox1.TabIndex = 13;
@@ -403,11 +404,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1220, 556);
+            this.ClientSize = new System.Drawing.Size(1220, 559);
             this.ControlBox = false;
             this.Controls.Add(this.FormLoadPanel);
             this.Controls.Add(this.MainPanel);
-            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Dashboard";
@@ -421,6 +421,7 @@
             this.SalesSubPanel.ResumeLayout(false);
             this.WelcomeDetailsPanel.ResumeLayout(false);
             this.WelcomeDetailsPanel.PerformLayout();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -431,7 +432,6 @@
         private System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.Panel WelcomeDetailsPanel;
         private System.Windows.Forms.Label UserNamelbl;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Datelbl;
         private System.Windows.Forms.Button DashboardBtn;
         private System.Windows.Forms.Button SalesBtn;
@@ -450,5 +450,6 @@
         private System.Windows.Forms.Button RevenueBtn;
         private System.Windows.Forms.Button ContactBtn;
         private System.Windows.Forms.Panel FormLoadPanel;
+        private System.Windows.Forms.Panel panel1;
     }
 }

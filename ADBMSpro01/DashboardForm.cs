@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//author @NuwanSudusinghe
+//author NuwanSudusinghe.
 namespace ADBMSpro01
 {
     public partial class DashboardForm : Form

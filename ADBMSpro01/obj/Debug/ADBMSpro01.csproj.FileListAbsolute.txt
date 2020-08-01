@@ -46,7 +46,6 @@ C:\Users\Nps\Documents\GitHub\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.csprojAs
 C:\Users\Nps\Documents\GitHub\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.Dashboard.resources
 C:\Users\Nps\Documents\GitHub\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.DashboardForm.resources
 C:\Users\Nps\Documents\GitHub\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.EmployeeAddForm.resources
-C:\Users\Nps\Documents\GitHub\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.EmployeeDeavtivateForm.resources
 C:\Users\Nps\Documents\GitHub\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.EmployeeDetailsForm.resources
 C:\Users\Nps\Documents\GitHub\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.Login.resources
 C:\Users\Nps\Documents\GitHub\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.MarketingAddForm.resources
@@ -60,3 +59,4 @@ C:\Users\Nps\Documents\GitHub\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.csproj.C
 C:\Users\Nps\Documents\GitHub\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.csproj.CopyComplete
 C:\Users\Nps\Documents\GitHub\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.exe
 C:\Users\Nps\Documents\GitHub\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.pdb
+C:\Users\Nps\Documents\GitHub\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.EmployeeDeacvtivateForm.resources

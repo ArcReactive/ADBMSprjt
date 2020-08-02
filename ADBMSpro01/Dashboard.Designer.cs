@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ContactBtn = new System.Windows.Forms.Button();
             this.MarketingSubPanel = new System.Windows.Forms.Panel();
             this.AddMarketingBtn = new System.Windows.Forms.Button();
@@ -49,15 +51,13 @@
             this.Datelbl = new System.Windows.Forms.Label();
             this.UserNamelbl = new System.Windows.Forms.Label();
             this.FormLoadPanel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MainPanel.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.MarketingSubPanel.SuspendLayout();
             this.EmployeeSubPanel.SuspendLayout();
             this.SalesSubPanel.SuspendLayout();
             this.WelcomeDetailsPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // MainPanel
@@ -80,6 +80,29 @@
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(200, 559);
             this.MainPanel.TabIndex = 17;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(40)))));
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 593);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(183, 81);
+            this.panel1.TabIndex = 30;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::ADBMSpro01.Properties.Resources.logout;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(74, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(37, 35);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // ContactBtn
             // 
@@ -155,7 +178,7 @@
             this.MarketingBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.MarketingBtn.Size = new System.Drawing.Size(183, 38);
             this.MarketingBtn.TabIndex = 27;
-            this.MarketingBtn.Text = "Marketing       *";
+            this.MarketingBtn.Text = "Marketing";
             this.MarketingBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.MarketingBtn.UseVisualStyleBackColor = true;
             this.MarketingBtn.Click += new System.EventHandler(this.MarketingBtn_Click);
@@ -235,7 +258,7 @@
             this.EmployeeBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.EmployeeBtn.Size = new System.Drawing.Size(183, 38);
             this.EmployeeBtn.TabIndex = 25;
-            this.EmployeeBtn.Text = "Employee       *";
+            this.EmployeeBtn.Text = "Employee";
             this.EmployeeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EmployeeBtn.UseVisualStyleBackColor = true;
             this.EmployeeBtn.Click += new System.EventHandler(this.EmployeeBtn_Click);
@@ -314,7 +337,7 @@
             this.SalesBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.SalesBtn.Size = new System.Drawing.Size(183, 38);
             this.SalesBtn.TabIndex = 22;
-            this.SalesBtn.Text = "Sales             *";
+            this.SalesBtn.Text = "Sales";
             this.SalesBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.SalesBtn.UseVisualStyleBackColor = true;
             this.SalesBtn.Click += new System.EventHandler(this.SalesBtn_Click);
@@ -376,29 +399,6 @@
             this.FormLoadPanel.Size = new System.Drawing.Size(1002, 509);
             this.FormLoadPanel.TabIndex = 18;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(40)))));
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 593);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(183, 81);
-            this.panel1.TabIndex = 30;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::ADBMSpro01.Properties.Resources.logout;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(74, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(37, 35);
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -416,13 +416,13 @@
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.MainPanel.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.MarketingSubPanel.ResumeLayout(false);
             this.EmployeeSubPanel.ResumeLayout(false);
             this.SalesSubPanel.ResumeLayout(false);
             this.WelcomeDetailsPanel.ResumeLayout(false);
             this.WelcomeDetailsPanel.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

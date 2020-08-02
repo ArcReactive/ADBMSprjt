@@ -201,6 +201,7 @@
     <None Include="Resources\emp.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\searchbutton.png" />
     <None Include="Resources\close icon.jpg" />
     <None Include="Resources\log icon.png" />
     <None Include="Resources\login.png" />

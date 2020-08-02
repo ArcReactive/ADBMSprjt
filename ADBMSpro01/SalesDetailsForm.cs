@@ -19,13 +19,143 @@ namespace ADBMSpro01
         public static SqlConnection myCon = null;
         SqlDataReader DR;
 
-        String p1 = null, p2 = null, p3 = null, p4 = null, p5 = null;
+        String p1 = "Empty", p2 = "Empty", p3 = "Empty", p4 = "Empty", p5 = "Empty";
 
         int[] pro1 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         int[] pro2 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         int[] pro3 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         int[] pro4 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         int[] pro5 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
+        int[] qtySpro = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        float[] totSpro = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
+        private void SearchBtn_Click(object sender, EventArgs e)
+        {
+            //set data to product search charts.
+
+            SearchProductQtyChart.Series.Clear();
+            SearchProductTotChart.Series.Clear();
+
+            string Pname = ProductSearchTxt.Text;
+            int year = 0;
+
+
+            if (ProductYearCBox.SelectedItem != null)
+            {
+                year = int.Parse(ProductYearCBox.SelectedItem.ToString());
+            }
+            else
+            {
+                //Value is null 
+            }
+
+            string QTYsql = "SELECT SUM(Quantity) as qty, " +
+                "MONTH(Sdate) as month " +
+                "FROM Sales " +
+                "WHERE YEAR(Sdate)  = " + year + " and Pname = '" + Pname + "' " +
+                "group by MONTH(Sdate)" +
+                "order by MONTH(Sdate)";
+
+            string TOTsql = "SELECT SUM(Total) as total, " +
+                "MONTH(Sdate) as month " +
+                "FROM Sales " +
+                "WHERE YEAR(Sdate)  = " + year + " and Pname = '" + Pname + "' " +
+                "group by MONTH(Sdate)" +
+                "order by MONTH(Sdate)";
+
+            //set Data QTY chart
+            myCon = dbcon.setCon();
+
+            using (myCon)
+            {
+                //read sql.
+                SqlCommand cmd = new SqlCommand(QTYsql, myCon);
+
+                DR = cmd.ExecuteReader();
+                using (DR)
+                {
+                    while (DR.Read())
+                    {
+                        int value = (int)DR.GetInt32(0);
+                        qtySpro[i] = value;
+                        i++;
+                    }
+                }
+                i = 0;
+                DR = null;
+            }
+
+            //add series to chart.
+            SearchProductQtyChart.Series = new LiveCharts.SeriesCollection
+            {
+                    new LineSeries
+                    {
+                        Title = ""+Pname,
+                        Values = new ChartValues<int> {
+                            qtySpro[0], qtySpro[1], qtySpro[2], qtySpro[3], qtySpro[4], qtySpro[5], qtySpro[6], qtySpro[7], qtySpro[8], qtySpro[9], qtySpro[10], qtySpro[11]
+                        }
+                    },
+            };
+
+            //clear values.
+            while (i <= 11)
+            {
+                qtySpro[i] = 0;
+                i++;
+            }
+            i = 0;
+
+
+            //SearchProductQtyChart.Update();
+
+            //set Data TOTAL chart
+            myCon = dbcon.setCon();
+
+            using (myCon)
+            {
+                //read sql.
+                SqlCommand cmd = new SqlCommand(TOTsql, myCon);
+
+                DR = cmd.ExecuteReader();
+                using (DR)
+                {
+                    while (DR.Read())
+                    {
+                        float value = (float)DR.GetDouble(0);
+                        totSpro[i] = value;
+                        i++;
+                    }
+                }
+                i = 0;
+                DR = null;
+            }
+
+            //add series to chart.
+            SearchProductTotChart.Series = new LiveCharts.SeriesCollection
+            {
+                    new LineSeries
+                    {
+                        Title = ""+Pname,
+                        Values = new ChartValues<float> {
+                            totSpro[0], totSpro[1], totSpro[2], totSpro[3], totSpro[4], totSpro[5], totSpro[6], totSpro[7], totSpro[8], totSpro[9], totSpro[10], totSpro[11]
+                        }
+                    },
+            };
+
+            //clear values.
+            while (i <= 11)
+            {
+                totSpro[i] = 0;
+                i++;
+            }
+            i = 0;
+        }
+
+        int i = 0;
+
+        //connection.
+        DBconnection dbcon = new DBconnection();
 
         public SalesDetailsForm()
         {
@@ -34,13 +164,10 @@ namespace ADBMSpro01
 
         private void SalesDetailsForm_Load(object sender, EventArgs e)
         {
-            //TOP 5 products monthly sales.
-
-            //connection.
-            DBconnection dbcon = new DBconnection();
-            myCon = dbcon.setCon();
+            //Top 5 products monthly sales.
 
             //set product 1.
+            myCon = dbcon.setCon();
             using (myCon)
             {
                 //read store procedure.
@@ -203,7 +330,20 @@ namespace ADBMSpro01
                             pro5[0],pro5[1],pro5[2],pro5[3],pro5[4],pro5[5],pro5[6],pro5[7],pro5[8],pro5[9],pro5[10],pro5[11]
                         }
                     },
-                };
+            };
+
+            //clear values.
+            while (i <= 11)
+            {
+                pro1[i] = 0;
+                pro2[i] = 0;
+                pro3[i] = 0;
+                pro4[i] = 0;
+                pro5[i] = 0;
+                i++;
+            }
+            i = 0;
+
             //set the X axis.
             Top5Chart.AxisX.Add(new Axis
             {
@@ -220,7 +360,44 @@ namespace ADBMSpro01
 
             Top5Chart.LegendLocation = LegendLocation.Right;
 
-            //TOP 5 products DONE.
+            //Top 5 products chart DONE.
+
+            //Load QTY and TOTAL charts.
+
+            //QTY chart.
+            //set the X axis.
+            SearchProductQtyChart.AxisX.Add(new Axis
+            {
+                Title = "Month",
+                Labels = new[] { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" }
+            });
+
+            //set the Y axis.
+            SearchProductQtyChart.AxisY.Add(new Axis
+            {
+                Title = "Quantity",
+                LabelFormatter = value => value.ToString()
+            });
+
+            SearchProductQtyChart.LegendLocation = LegendLocation.Right;
+
+
+            //Show TOTAL chart
+            //set the X axis.
+            SearchProductTotChart.AxisX.Add(new Axis
+            {
+                Title = "Month",
+                Labels = new[] { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" }
+            });
+
+            //set the Y axis.
+            SearchProductTotChart.AxisY.Add(new Axis
+            {
+                Title = "Total",
+                LabelFormatter = value => value.ToString("C")
+            });
+
+            SearchProductTotChart.LegendLocation = LegendLocation.Right;
 
         }
     }

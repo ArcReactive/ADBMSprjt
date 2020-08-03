@@ -60,3 +60,34 @@ C:\Users\Nps\Documents\GitHub\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.csproj.C
 C:\Users\Nps\Documents\GitHub\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.exe
 C:\Users\Nps\Documents\GitHub\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.pdb
 C:\Users\Nps\Documents\GitHub\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.EmployeeDeacvtivateForm.resources
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.Dashboard.resources
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.DashboardForm.resources
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.EmployeeAddForm.resources
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.EmployeeDeacvtivateForm.resources
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.EmployeeDetailsForm.resources
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.Login.resources
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.MarketingAddForm.resources
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.MarketingDetailsForm.resources
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.Properties.Resources.resources
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.RevenueForm.resources
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.SalesAddForm.resources
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.SalesDetailsForm.resources
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.csproj.GenerateResource.cache
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.csproj.CoreCompileInputs.cache
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.exe
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.pdb
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\bin\Debug\ADBMSpro01.exe.config
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\bin\Debug\ADBMSpro01.exe
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\bin\Debug\ADBMSpro01.pdb
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\bin\Debug\LiveCharts.dll
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\bin\Debug\LiveCharts.WinForms.dll
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\bin\Debug\LiveCharts.Wpf.dll
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\bin\Debug\LiveCharts.pdb
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\bin\Debug\LiveCharts.xml
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\bin\Debug\LiveCharts.WinForms.pdb
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\bin\Debug\LiveCharts.WinForms.xml
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\bin\Debug\LiveCharts.Wpf.pdb
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\bin\Debug\LiveCharts.Wpf.xml
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.csproj.CopyComplete
+D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.csprojAssemblyReference.cache

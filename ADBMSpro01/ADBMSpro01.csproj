@@ -65,6 +65,11 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADBMSpro1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ADBMSpro1DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +182,17 @@
     <EmbeddedResource Include="SalesDetailsForm.resx">
       <DependentUpon>SalesDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ADBMSpro1DataSet.xsc">
+      <DependentUpon>ADBMSpro1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ADBMSpro1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ADBMSpro1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ADBMSpro1DataSet.xss">
+      <DependentUpon>ADBMSpro1DataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

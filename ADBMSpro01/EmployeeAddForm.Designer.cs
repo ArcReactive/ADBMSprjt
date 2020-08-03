@@ -73,7 +73,7 @@
             this.panel.Controls.Add(this.lblFname);
             this.panel.Controls.Add(this.txtFname);
             this.panel.Location = new System.Drawing.Point(9, 10);
-            this.panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel.Margin = new System.Windows.Forms.Padding(2);
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(968, 101);
             this.panel.TabIndex = 0;
@@ -95,7 +95,7 @@
             this.txtRD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtRD.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "Eregiterdate", true));
             this.txtRD.Location = new System.Drawing.Point(144, 75);
-            this.txtRD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRD.Margin = new System.Windows.Forms.Padding(2);
             this.txtRD.Name = "txtRD";
             this.txtRD.Size = new System.Drawing.Size(816, 20);
             this.txtRD.TabIndex = 7;
@@ -128,7 +128,7 @@
             this.txtDoB.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtDoB.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "Ebod", true));
             this.txtDoB.Location = new System.Drawing.Point(144, 52);
-            this.txtDoB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDoB.Margin = new System.Windows.Forms.Padding(2);
             this.txtDoB.Name = "txtDoB";
             this.txtDoB.Size = new System.Drawing.Size(816, 20);
             this.txtDoB.TabIndex = 5;
@@ -150,7 +150,7 @@
             this.txtLname.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtLname.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "Elname", true));
             this.txtLname.Location = new System.Drawing.Point(144, 29);
-            this.txtLname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLname.Margin = new System.Windows.Forms.Padding(2);
             this.txtLname.Name = "txtLname";
             this.txtLname.Size = new System.Drawing.Size(816, 20);
             this.txtLname.TabIndex = 3;
@@ -171,7 +171,7 @@
             this.txtFname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFname.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "Efname", true));
             this.txtFname.Location = new System.Drawing.Point(144, 6);
-            this.txtFname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFname.Margin = new System.Windows.Forms.Padding(2);
             this.txtFname.Name = "txtFname";
             this.txtFname.Size = new System.Drawing.Size(816, 20);
             this.txtFname.TabIndex = 1;
@@ -181,7 +181,7 @@
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.Location = new System.Drawing.Point(922, 431);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(56, 29);
             this.btnSave.TabIndex = 2;
@@ -206,13 +206,14 @@
             this.estatusDataGridViewTextBoxColumn});
             this.showEmployeeTableDataGridView.DataSource = this.employeeBindingSource;
             this.showEmployeeTableDataGridView.Location = new System.Drawing.Point(10, 153);
-            this.showEmployeeTableDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showEmployeeTableDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.showEmployeeTableDataGridView.Name = "showEmployeeTableDataGridView";
             this.showEmployeeTableDataGridView.RowHeadersWidth = 51;
             this.showEmployeeTableDataGridView.RowTemplate.Height = 24;
             this.showEmployeeTableDataGridView.Size = new System.Drawing.Size(968, 275);
             this.showEmployeeTableDataGridView.TabIndex = 3;
             this.showEmployeeTableDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
+            this.showEmployeeTableDataGridView.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.ShowEmployeeTableDataGridView_CellMouseClick);
             this.showEmployeeTableDataGridView.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DataGridView_KeyDown);
             // 
             // eidDataGridViewTextBoxColumn
@@ -267,7 +268,7 @@
             // txtSearch
             // 
             this.txtSearch.Location = new System.Drawing.Point(9, 123);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(892, 20);
             this.txtSearch.TabIndex = 11;
@@ -277,7 +278,7 @@
             // 
             this.btnNew.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnNew.Location = new System.Drawing.Point(801, 431);
-            this.btnNew.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNew.Margin = new System.Windows.Forms.Padding(2);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(56, 29);
             this.btnNew.TabIndex = 13;
@@ -298,7 +299,7 @@
             // btnEmployeeSearch
             // 
             this.btnEmployeeSearch.Location = new System.Drawing.Point(904, 123);
-            this.btnEmployeeSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEmployeeSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnEmployeeSearch.Name = "btnEmployeeSearch";
             this.btnEmployeeSearch.Size = new System.Drawing.Size(73, 20);
             this.btnEmployeeSearch.TabIndex = 14;
@@ -310,7 +311,7 @@
             // 
             this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnClear.Location = new System.Drawing.Point(862, 431);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(56, 28);
             this.btnClear.TabIndex = 15;

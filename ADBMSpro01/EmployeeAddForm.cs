@@ -65,7 +65,7 @@ namespace ADBMSpro01
             
 
             string sql = "INSERT INTO Employee (Efname,Elname,Ebod,Eregiterdate,Estatus) " +
-                "VALUES ('"+ txtFname.Text +"', '"+ txtLname.Text +"', '"+ DOBTimePicker +"', '"+ RDTimePicker +"', 'Deactive')";
+                "VALUES ('"+ txtFname.Text +"', '"+ txtLname.Text +"', '"+ DOBTimePicker.Value.Date +"', '"+ RDTimePicker.Value.Date +"', 'Deactive')";
 
             SqlCommand cmd = new SqlCommand(sql, mycon);
 
@@ -133,8 +133,8 @@ namespace ADBMSpro01
                 DataGridViewRow row = showEmployeeTableDataGridView.Rows[e.RowIndex];
                 txtFname.Text = row.Cells[1].Value.ToString();
                 txtLname.Text = row.Cells[2].Value.ToString();
-                txtDoB.Text = row.Cells[3].Value.ToString();
-                txtRD.Text = row.Cells[4].Value.ToString();
+                DOBTimePicker.Value = (DateTime)row.Cells[3].Value;
+                RDTimePicker.Value = (DateTime)row.Cells[4].Value;
             }
         }
     }

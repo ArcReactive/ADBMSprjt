@@ -34,21 +34,21 @@ namespace ADBMSpro01
         private void DataGridView_KeyDown(object sender, KeyEventArgs e)
         {
 
-            string sql = "SELECT * FROM Employee ";
+            //string sql = "SELECT * FROM Employee ";
 
-            SqlDataAdapter sqlDA = new SqlDataAdapter(sql, mycon);
-            DataSet ds = new DataSet();
-            sqlDA.Fill(ds, "Employee");
+            //SqlDataAdapter sqlDA = new SqlDataAdapter(sql, mycon);
+            //DataSet ds = new DataSet();
+            //sqlDA.Fill(ds, "Employee");
 
-            showEmployeeTableDataGridView.DataSource = ds.Tables["Tables"];
+            //showEmployeeTableDataGridView.DataSource = ds.Tables["Tables"];
 
-            if (e.KeyCode == Keys.Delete)
-            {
-                if (MessageBox.Show("Are you sure you want to delete this record?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    employeeBindingSource.RemoveCurrent();
-                }
-            }
+            //if (e.KeyCode == Keys.Delete)
+            //{
+            //    if (MessageBox.Show("Are you sure you want to delete this record?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            //    {
+            //        employeeBindingSource.RemoveCurrent();
+            //    }
+            //}
         }
 
         private void EmployeeAddForm_Load(object sender, EventArgs e)
@@ -87,8 +87,8 @@ namespace ADBMSpro01
 
         private void BtnEdit_Click(object sender, EventArgs e)
         {
-            panel.Enabled = true;
-            txtFname.Focus();
+            //panel.Enabled = true;
+            //txtFname.Focus();
         }
 
         private void BtnSave_Click(object sender, EventArgs e)
@@ -113,15 +113,15 @@ namespace ADBMSpro01
 
         private void TxtSearch_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (char)13)
-            {
-                if (string.IsNullOrEmpty(txtSearch.Text))
-                {
-                    this.employeeTableAdapter.Fill(this.aDBMSpro1DataSet.Employee);
-                    employeeBindingSource.DataSource = this.aDBMSpro1DataSet.Employee;
-                    showEmployeeTableDataGridView.DataSource = employeeBindingSource;
-                }
-            }
+            //if (e.KeyChar == (char)13)
+            //{
+            //    if (string.IsNullOrEmpty(txtSearch.Text))
+            //    {
+            //        this.employeeTableAdapter.Fill(this.aDBMSpro1DataSet.Employee);
+            //        employeeBindingSource.DataSource = this.aDBMSpro1DataSet.Employee;
+            //        showEmployeeTableDataGridView.DataSource = employeeBindingSource;
+            //    }
+            //}
         }
 
         private void TxtLname_TextChanged(object sender, EventArgs e)
@@ -160,6 +160,18 @@ namespace ADBMSpro01
             sqlDA.Fill(ds, "Employee");
 
             showEmployeeTableDataGridView.DataSource = ds.Tables["Employee"];
+        }
+
+        private void ShowEmployeeTableDataGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = showEmployeeTableDataGridView.Rows[e.RowIndex];
+                txtFname.Text = row.Cells[1].Value.ToString();
+                txtLname.Text = row.Cells[2].Value.ToString();
+                txtDoB.Text = row.Cells[3].Value.ToString();
+                txtRD.Text = row.Cells[4].Value.ToString();
+            }
         }
     }
 }

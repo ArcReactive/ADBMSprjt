@@ -72,10 +72,10 @@
             this.panel.Controls.Add(this.txtLname);
             this.panel.Controls.Add(this.lblFname);
             this.panel.Controls.Add(this.txtFname);
-            this.panel.Location = new System.Drawing.Point(12, 12);
-            this.panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel.Location = new System.Drawing.Point(9, 10);
+            this.panel.Margin = new System.Windows.Forms.Padding(2);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(1291, 124);
+            this.panel.Size = new System.Drawing.Size(968, 101);
             this.panel.TabIndex = 0;
             // 
             // lblRD
@@ -83,9 +83,10 @@
             this.lblRD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblRD.AutoSize = true;
-            this.lblRD.Location = new System.Drawing.Point(13, 95);
+            this.lblRD.Location = new System.Drawing.Point(10, 77);
+            this.lblRD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRD.Name = "lblRD";
-            this.lblRD.Size = new System.Drawing.Size(122, 17);
+            this.lblRD.Size = new System.Drawing.Size(92, 13);
             this.lblRD.TabIndex = 6;
             this.lblRD.Text = "Ragistration Date:";
             // 
@@ -93,10 +94,10 @@
             // 
             this.txtRD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtRD.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "Eregiterdate", true));
-            this.txtRD.Location = new System.Drawing.Point(192, 92);
-            this.txtRD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtRD.Location = new System.Drawing.Point(144, 75);
+            this.txtRD.Margin = new System.Windows.Forms.Padding(2);
             this.txtRD.Name = "txtRD";
-            this.txtRD.Size = new System.Drawing.Size(1087, 22);
+            this.txtRD.Size = new System.Drawing.Size(816, 20);
             this.txtRD.TabIndex = 7;
             this.txtRD.TextChanged += new System.EventHandler(this.TxtRD_TextChanged);
             // 
@@ -114,9 +115,10 @@
             // 
             this.lblDoB.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblDoB.AutoSize = true;
-            this.lblDoB.Location = new System.Drawing.Point(13, 66);
+            this.lblDoB.Location = new System.Drawing.Point(10, 54);
+            this.lblDoB.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDoB.Name = "lblDoB";
-            this.lblDoB.Size = new System.Drawing.Size(91, 17);
+            this.lblDoB.Size = new System.Drawing.Size(69, 13);
             this.lblDoB.TabIndex = 4;
             this.lblDoB.Text = "Date of Birth:";
             this.lblDoB.Click += new System.EventHandler(this.Label3_Click);
@@ -125,10 +127,10 @@
             // 
             this.txtDoB.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtDoB.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "Ebod", true));
-            this.txtDoB.Location = new System.Drawing.Point(192, 64);
-            this.txtDoB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDoB.Location = new System.Drawing.Point(144, 52);
+            this.txtDoB.Margin = new System.Windows.Forms.Padding(2);
             this.txtDoB.Name = "txtDoB";
-            this.txtDoB.Size = new System.Drawing.Size(1087, 22);
+            this.txtDoB.Size = new System.Drawing.Size(816, 20);
             this.txtDoB.TabIndex = 5;
             this.txtDoB.TextChanged += new System.EventHandler(this.TxtDoB_TextChanged);
             // 
@@ -136,9 +138,10 @@
             // 
             this.lblLname.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblLname.AutoSize = true;
-            this.lblLname.Location = new System.Drawing.Point(13, 39);
+            this.lblLname.Location = new System.Drawing.Point(10, 32);
+            this.lblLname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLname.Name = "lblLname";
-            this.lblLname.Size = new System.Drawing.Size(80, 17);
+            this.lblLname.Size = new System.Drawing.Size(61, 13);
             this.lblLname.TabIndex = 2;
             this.lblLname.Text = "Last Name:";
             // 
@@ -146,19 +149,20 @@
             // 
             this.txtLname.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtLname.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "Elname", true));
-            this.txtLname.Location = new System.Drawing.Point(192, 36);
-            this.txtLname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtLname.Location = new System.Drawing.Point(144, 29);
+            this.txtLname.Margin = new System.Windows.Forms.Padding(2);
             this.txtLname.Name = "txtLname";
-            this.txtLname.Size = new System.Drawing.Size(1087, 22);
+            this.txtLname.Size = new System.Drawing.Size(816, 20);
             this.txtLname.TabIndex = 3;
             this.txtLname.TextChanged += new System.EventHandler(this.TxtLname_TextChanged);
             // 
             // lblFname
             // 
             this.lblFname.AutoSize = true;
-            this.lblFname.Location = new System.Drawing.Point(13, 11);
+            this.lblFname.Location = new System.Drawing.Point(10, 9);
+            this.lblFname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFname.Name = "lblFname";
-            this.lblFname.Size = new System.Drawing.Size(80, 17);
+            this.lblFname.Size = new System.Drawing.Size(60, 13);
             this.lblFname.TabIndex = 0;
             this.lblFname.Text = "First Name:";
             // 
@@ -166,20 +170,20 @@
             // 
             this.txtFname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFname.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource, "Efname", true));
-            this.txtFname.Location = new System.Drawing.Point(192, 7);
-            this.txtFname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtFname.Location = new System.Drawing.Point(144, 6);
+            this.txtFname.Margin = new System.Windows.Forms.Padding(2);
             this.txtFname.Name = "txtFname";
-            this.txtFname.Size = new System.Drawing.Size(1087, 22);
+            this.txtFname.Size = new System.Drawing.Size(816, 20);
             this.txtFname.TabIndex = 1;
             this.txtFname.TextChanged += new System.EventHandler(this.TxtFname_TextChanged);
             // 
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Location = new System.Drawing.Point(1229, 530);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSave.Location = new System.Drawing.Point(922, 431);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 36);
+            this.btnSave.Size = new System.Drawing.Size(56, 29);
             this.btnSave.TabIndex = 2;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -201,14 +205,15 @@
             this.eregiterdateDataGridViewTextBoxColumn,
             this.estatusDataGridViewTextBoxColumn});
             this.showEmployeeTableDataGridView.DataSource = this.employeeBindingSource;
-            this.showEmployeeTableDataGridView.Location = new System.Drawing.Point(13, 188);
-            this.showEmployeeTableDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.showEmployeeTableDataGridView.Location = new System.Drawing.Point(10, 153);
+            this.showEmployeeTableDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.showEmployeeTableDataGridView.Name = "showEmployeeTableDataGridView";
             this.showEmployeeTableDataGridView.RowHeadersWidth = 51;
             this.showEmployeeTableDataGridView.RowTemplate.Height = 24;
-            this.showEmployeeTableDataGridView.Size = new System.Drawing.Size(1291, 338);
+            this.showEmployeeTableDataGridView.Size = new System.Drawing.Size(968, 275);
             this.showEmployeeTableDataGridView.TabIndex = 3;
             this.showEmployeeTableDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
+            this.showEmployeeTableDataGridView.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.ShowEmployeeTableDataGridView_CellMouseClick);
             this.showEmployeeTableDataGridView.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DataGridView_KeyDown);
             // 
             // eidDataGridViewTextBoxColumn
@@ -262,22 +267,20 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtSearch.Location = new System.Drawing.Point(12, 151);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSearch.Location = new System.Drawing.Point(9, 123);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(1188, 22);
+            this.txtSearch.Size = new System.Drawing.Size(892, 20);
             this.txtSearch.TabIndex = 11;
             this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtSearch_KeyPress);
             // 
             // btnNew
             // 
             this.btnNew.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnNew.Location = new System.Drawing.Point(1068, 530);
-            this.btnNew.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNew.Location = new System.Drawing.Point(801, 431);
+            this.btnNew.Margin = new System.Windows.Forms.Padding(2);
             this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(75, 36);
+            this.btnNew.Size = new System.Drawing.Size(56, 29);
             this.btnNew.TabIndex = 13;
             this.btnNew.Text = "New";
             this.btnNew.UseVisualStyleBackColor = true;
@@ -295,10 +298,10 @@
             // 
             // btnEmployeeSearch
             // 
-            this.btnEmployeeSearch.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnEmployeeSearch.Location = new System.Drawing.Point(1206, 149);
+            this.btnEmployeeSearch.Location = new System.Drawing.Point(904, 123);
+            this.btnEmployeeSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnEmployeeSearch.Name = "btnEmployeeSearch";
-            this.btnEmployeeSearch.Size = new System.Drawing.Size(97, 23);
+            this.btnEmployeeSearch.Size = new System.Drawing.Size(73, 20);
             this.btnEmployeeSearch.TabIndex = 14;
             this.btnEmployeeSearch.Text = "Search";
             this.btnEmployeeSearch.UseVisualStyleBackColor = true;
@@ -307,9 +310,10 @@
             // btnClear
             // 
             this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnClear.Location = new System.Drawing.Point(1149, 531);
+            this.btnClear.Location = new System.Drawing.Point(862, 431);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 35);
+            this.btnClear.Size = new System.Drawing.Size(56, 28);
             this.btnClear.TabIndex = 15;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -317,9 +321,9 @@
             // 
             // EmployeeAddForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1315, 578);
+            this.ClientSize = new System.Drawing.Size(986, 470);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnEmployeeSearch);
             this.Controls.Add(this.btnNew);
@@ -327,7 +331,6 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.panel);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EmployeeAddForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmployeeAddForm";

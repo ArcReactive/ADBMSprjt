@@ -29,6 +29,17 @@ namespace ADBMSpro01
 
         private void DataGridView_KeyDown(object sender, KeyEventArgs e)
         {
+
+            //string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|telecom-crm-db.mdf;Integrated Security=True;Connect Timeout=30";
+
+            //string sql = "SELECT * FROM Services ";
+
+            //SqlDataAdapter sqlDA = new SqlDataAdapter(sql, con);
+            //DataSet ds = new DataSet();
+            //sqlDA.Fill(ds, "Services");
+
+            //dataGridView1.DataSource = ds.Tables["Services"];
+
             if (e.KeyCode == Keys.Delete)
             {
                 if (MessageBox.Show("Are you sure you want to delete this record?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)

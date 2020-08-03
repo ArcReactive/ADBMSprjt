@@ -16,6 +16,9 @@ namespace ADBMSpro01
     public partial class SalesDetailsForm : Form
     {
 
+        //connection.
+        DBconnection dbcon = new DBconnection();
+
         public static SqlConnection myCon = null;
         SqlDataReader DR;
 
@@ -154,8 +157,7 @@ namespace ADBMSpro01
 
         int i = 0;
 
-        //connection.
-        DBconnection dbcon = new DBconnection();
+        
 
         public SalesDetailsForm()
         {

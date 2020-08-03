@@ -62,10 +62,13 @@ namespace ADBMSpro01
         {
             mycon = dbcon.setCon();
 
+            
+
             string sql = "INSERT INTO Employee (Efname,Elname,Ebod,Eregiterdate,Estatus) " +
                 "VALUES ('"+ txtFname.Text +"', '"+ txtLname.Text +"', '"+ DOBTimePicker +"', '"+ RDTimePicker +"', 'Deactive')";
 
             SqlCommand cmd = new SqlCommand(sql, mycon);
+
 
             cmd.ExecuteNonQuery();
 

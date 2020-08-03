@@ -20,7 +20,10 @@ namespace ADBMSpro01
         //set connection path.
         public SqlConnection setCon()
         {
-            myCon = new SqlConnection("Data Source=LAPTOP-74BFFP6C;Initial Catalog=ADBMSpro1;Integrated Security=True");
+            //nuwan - DESKTOP-UKFGO45
+            //kavindu - LAPTOP-74BFFP6C
+            //vikum - 
+            myCon = new SqlConnection("Data Source=DESKTOP-UKFGO45;Initial Catalog=ADBMSpro1;Integrated Security=True");
             myCon.Open();
 
             return myCon;

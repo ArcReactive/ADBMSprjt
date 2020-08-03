@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel = new System.Windows.Forms.Panel();
+            this.RDTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.DOBTimePicker = new System.Windows.Forms.DateTimePicker();
             this.lblRD = new System.Windows.Forms.Label();
-            this.txtRD = new System.Windows.Forms.TextBox();
             this.lblDoB = new System.Windows.Forms.Label();
-            this.txtDoB = new System.Windows.Forms.TextBox();
             this.lblLname = new System.Windows.Forms.Label();
             this.txtLname = new System.Windows.Forms.TextBox();
             this.lblFname = new System.Windows.Forms.Label();
@@ -43,8 +43,6 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnEmployeeSearch = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
-            this.DOBTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.RDTimePicker = new System.Windows.Forms.DateTimePicker();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showEmployeeTableDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -54,9 +52,7 @@
             this.panel.Controls.Add(this.RDTimePicker);
             this.panel.Controls.Add(this.DOBTimePicker);
             this.panel.Controls.Add(this.lblRD);
-            this.panel.Controls.Add(this.txtRD);
             this.panel.Controls.Add(this.lblDoB);
-            this.panel.Controls.Add(this.txtDoB);
             this.panel.Controls.Add(this.lblLname);
             this.panel.Controls.Add(this.txtLname);
             this.panel.Controls.Add(this.lblFname);
@@ -64,91 +60,93 @@
             this.panel.Location = new System.Drawing.Point(9, 10);
             this.panel.Margin = new System.Windows.Forms.Padding(2);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(968, 101);
+            this.panel.Size = new System.Drawing.Size(968, 81);
             this.panel.TabIndex = 0;
+            // 
+            // RDTimePicker
+            // 
+            this.RDTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RDTimePicker.Location = new System.Drawing.Point(630, 40);
+            this.RDTimePicker.Name = "RDTimePicker";
+            this.RDTimePicker.Size = new System.Drawing.Size(279, 26);
+            this.RDTimePicker.TabIndex = 9;
+            // 
+            // DOBTimePicker
+            // 
+            this.DOBTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DOBTimePicker.Location = new System.Drawing.Point(144, 41);
+            this.DOBTimePicker.Name = "DOBTimePicker";
+            this.DOBTimePicker.Size = new System.Drawing.Size(283, 26);
+            this.DOBTimePicker.TabIndex = 8;
             // 
             // lblRD
             // 
             this.lblRD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblRD.AutoSize = true;
-            this.lblRD.Location = new System.Drawing.Point(10, 77);
+            this.lblRD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRD.Location = new System.Drawing.Point(470, 46);
             this.lblRD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRD.Name = "lblRD";
-            this.lblRD.Size = new System.Drawing.Size(92, 13);
+            this.lblRD.Size = new System.Drawing.Size(138, 20);
             this.lblRD.TabIndex = 6;
             this.lblRD.Text = "Ragistration Date:";
-            // 
-            // txtRD
-            // 
-            this.txtRD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRD.Location = new System.Drawing.Point(144, 75);
-            this.txtRD.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRD.Name = "txtRD";
-            this.txtRD.Size = new System.Drawing.Size(119, 20);
-            this.txtRD.TabIndex = 7;
-            this.txtRD.TextChanged += new System.EventHandler(this.TxtRD_TextChanged);
             // 
             // lblDoB
             // 
             this.lblDoB.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblDoB.AutoSize = true;
-            this.lblDoB.Location = new System.Drawing.Point(10, 54);
+            this.lblDoB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDoB.Location = new System.Drawing.Point(10, 47);
             this.lblDoB.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDoB.Name = "lblDoB";
-            this.lblDoB.Size = new System.Drawing.Size(69, 13);
+            this.lblDoB.Size = new System.Drawing.Size(103, 20);
             this.lblDoB.TabIndex = 4;
             this.lblDoB.Text = "Date of Birth:";
             this.lblDoB.Click += new System.EventHandler(this.Label3_Click);
-            // 
-            // txtDoB
-            // 
-            this.txtDoB.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txtDoB.Location = new System.Drawing.Point(144, 52);
-            this.txtDoB.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDoB.Name = "txtDoB";
-            this.txtDoB.Size = new System.Drawing.Size(119, 20);
-            this.txtDoB.TabIndex = 5;
-            this.txtDoB.TextChanged += new System.EventHandler(this.TxtDoB_TextChanged);
             // 
             // lblLname
             // 
             this.lblLname.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblLname.AutoSize = true;
-            this.lblLname.Location = new System.Drawing.Point(10, 32);
+            this.lblLname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLname.Location = new System.Drawing.Point(470, 14);
             this.lblLname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLname.Name = "lblLname";
-            this.lblLname.Size = new System.Drawing.Size(61, 13);
+            this.lblLname.Size = new System.Drawing.Size(90, 20);
             this.lblLname.TabIndex = 2;
             this.lblLname.Text = "Last Name:";
             // 
             // txtLname
             // 
             this.txtLname.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txtLname.Location = new System.Drawing.Point(144, 29);
+            this.txtLname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLname.Location = new System.Drawing.Point(630, 6);
             this.txtLname.Margin = new System.Windows.Forms.Padding(2);
             this.txtLname.Name = "txtLname";
-            this.txtLname.Size = new System.Drawing.Size(816, 20);
+            this.txtLname.Size = new System.Drawing.Size(279, 26);
             this.txtLname.TabIndex = 3;
             this.txtLname.TextChanged += new System.EventHandler(this.TxtLname_TextChanged);
             // 
             // lblFname
             // 
             this.lblFname.AutoSize = true;
-            this.lblFname.Location = new System.Drawing.Point(10, 9);
+            this.lblFname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFname.Location = new System.Drawing.Point(10, 15);
             this.lblFname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFname.Name = "lblFname";
-            this.lblFname.Size = new System.Drawing.Size(60, 13);
+            this.lblFname.Size = new System.Drawing.Size(90, 20);
             this.lblFname.TabIndex = 0;
             this.lblFname.Text = "First Name:";
             // 
             // txtFname
             // 
             this.txtFname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFname.Location = new System.Drawing.Point(144, 6);
             this.txtFname.Margin = new System.Windows.Forms.Padding(2);
             this.txtFname.Name = "txtFname";
-            this.txtFname.Size = new System.Drawing.Size(816, 20);
+            this.txtFname.Size = new System.Drawing.Size(283, 26);
             this.txtFname.TabIndex = 1;
             this.txtFname.TextChanged += new System.EventHandler(this.TxtFname_TextChanged);
             // 
@@ -171,12 +169,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.showEmployeeTableDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.showEmployeeTableDataGridView.Location = new System.Drawing.Point(10, 153);
+            this.showEmployeeTableDataGridView.Location = new System.Drawing.Point(10, 125);
             this.showEmployeeTableDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.showEmployeeTableDataGridView.Name = "showEmployeeTableDataGridView";
             this.showEmployeeTableDataGridView.RowHeadersWidth = 51;
             this.showEmployeeTableDataGridView.RowTemplate.Height = 24;
-            this.showEmployeeTableDataGridView.Size = new System.Drawing.Size(968, 275);
+            this.showEmployeeTableDataGridView.Size = new System.Drawing.Size(968, 292);
             this.showEmployeeTableDataGridView.TabIndex = 3;
             this.showEmployeeTableDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             this.showEmployeeTableDataGridView.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.ShowEmployeeTableDataGridView_CellMouseClick);
@@ -184,10 +182,11 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(9, 123);
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(8, 95);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(892, 20);
+            this.txtSearch.Size = new System.Drawing.Size(867, 26);
             this.txtSearch.TabIndex = 11;
             this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtSearch_KeyPress);
             // 
@@ -205,10 +204,10 @@
             // 
             // btnEmployeeSearch
             // 
-            this.btnEmployeeSearch.Location = new System.Drawing.Point(904, 123);
+            this.btnEmployeeSearch.Location = new System.Drawing.Point(879, 95);
             this.btnEmployeeSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnEmployeeSearch.Name = "btnEmployeeSearch";
-            this.btnEmployeeSearch.Size = new System.Drawing.Size(73, 20);
+            this.btnEmployeeSearch.Size = new System.Drawing.Size(96, 26);
             this.btnEmployeeSearch.TabIndex = 14;
             this.btnEmployeeSearch.Text = "Search";
             this.btnEmployeeSearch.UseVisualStyleBackColor = true;
@@ -225,20 +224,6 @@
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);
-            // 
-            // DOBTimePicker
-            // 
-            this.DOBTimePicker.Location = new System.Drawing.Point(269, 51);
-            this.DOBTimePicker.Name = "DOBTimePicker";
-            this.DOBTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.DOBTimePicker.TabIndex = 8;
-            // 
-            // RDTimePicker
-            // 
-            this.RDTimePicker.Location = new System.Drawing.Point(269, 74);
-            this.RDTimePicker.Name = "RDTimePicker";
-            this.RDTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.RDTimePicker.TabIndex = 9;
             // 
             // EmployeeAddForm
             // 
@@ -268,9 +253,7 @@
 
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.Label lblRD;
-        private System.Windows.Forms.TextBox txtRD;
         private System.Windows.Forms.Label lblDoB;
-        private System.Windows.Forms.TextBox txtDoB;
         private System.Windows.Forms.Label lblLname;
         private System.Windows.Forms.TextBox txtLname;
         private System.Windows.Forms.Label lblFname;

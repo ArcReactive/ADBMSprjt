@@ -62,13 +62,10 @@ namespace ADBMSpro01
         {
             mycon = dbcon.setCon();
 
-            
-
             string sql = "INSERT INTO Employee (Efname,Elname,Ebod,Eregiterdate,Estatus) " +
                 "VALUES ('"+ txtFname.Text +"', '"+ txtLname.Text +"', '"+ DOBTimePicker.Value.Date +"', '"+ RDTimePicker.Value.Date +"', 'Deactive')";
 
             SqlCommand cmd = new SqlCommand(sql, mycon);
-
 
             cmd.ExecuteNonQuery();
 
@@ -116,7 +113,6 @@ namespace ADBMSpro01
         //clear
         private void BtnClear_Click(object sender, EventArgs e)
         {
-            
             string sql = "SELECT * FROM Employee";
             SqlDataAdapter sqlDA = new SqlDataAdapter(sql, mycon);
             DataSet ds = new DataSet();

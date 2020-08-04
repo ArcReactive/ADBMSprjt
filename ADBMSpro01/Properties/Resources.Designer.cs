@@ -73,6 +73,16 @@ namespace ADBMSpro01.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap clearBtn {
+            get {
+                object obj = ResourceManager.GetObject("clearBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap close_icon {
             get {
                 object obj = ResourceManager.GetObject("close icon", resourceCulture);
@@ -153,9 +163,39 @@ namespace ADBMSpro01.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap saveBtn {
+            get {
+                object obj = ResourceManager.GetObject("saveBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap searchBtn {
+            get {
+                object obj = ResourceManager.GetObject("searchBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap searchbutton {
             get {
                 object obj = ResourceManager.GetObject("searchbutton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap updateBtn {
+            get {
+                object obj = ResourceManager.GetObject("updateBtn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

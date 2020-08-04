@@ -65,18 +65,18 @@
             // 
             // RDTimePicker
             // 
-            this.RDTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RDTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RDTimePicker.Location = new System.Drawing.Point(630, 40);
             this.RDTimePicker.Name = "RDTimePicker";
-            this.RDTimePicker.Size = new System.Drawing.Size(279, 26);
+            this.RDTimePicker.Size = new System.Drawing.Size(279, 24);
             this.RDTimePicker.TabIndex = 9;
             // 
             // DOBTimePicker
             // 
-            this.DOBTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DOBTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DOBTimePicker.Location = new System.Drawing.Point(144, 41);
             this.DOBTimePicker.Name = "DOBTimePicker";
-            this.DOBTimePicker.Size = new System.Drawing.Size(283, 26);
+            this.DOBTimePicker.Size = new System.Drawing.Size(283, 24);
             this.DOBTimePicker.TabIndex = 8;
             // 
             // lblRD
@@ -84,11 +84,11 @@
             this.lblRD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblRD.AutoSize = true;
-            this.lblRD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRD.Location = new System.Drawing.Point(470, 46);
             this.lblRD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRD.Name = "lblRD";
-            this.lblRD.Size = new System.Drawing.Size(138, 20);
+            this.lblRD.Size = new System.Drawing.Size(126, 18);
             this.lblRD.TabIndex = 6;
             this.lblRD.Text = "Ragistration Date:";
             // 
@@ -96,11 +96,11 @@
             // 
             this.lblDoB.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblDoB.AutoSize = true;
-            this.lblDoB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDoB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDoB.Location = new System.Drawing.Point(10, 47);
             this.lblDoB.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDoB.Name = "lblDoB";
-            this.lblDoB.Size = new System.Drawing.Size(103, 20);
+            this.lblDoB.Size = new System.Drawing.Size(94, 18);
             this.lblDoB.TabIndex = 4;
             this.lblDoB.Text = "Date of Birth:";
             this.lblDoB.Click += new System.EventHandler(this.Label3_Click);
@@ -109,50 +109,51 @@
             // 
             this.lblLname.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblLname.AutoSize = true;
-            this.lblLname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLname.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLname.Location = new System.Drawing.Point(470, 14);
             this.lblLname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLname.Name = "lblLname";
-            this.lblLname.Size = new System.Drawing.Size(90, 20);
+            this.lblLname.Size = new System.Drawing.Size(84, 18);
             this.lblLname.TabIndex = 2;
             this.lblLname.Text = "Last Name:";
             // 
             // txtLname
             // 
             this.txtLname.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txtLname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLname.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLname.Location = new System.Drawing.Point(630, 6);
             this.txtLname.Margin = new System.Windows.Forms.Padding(2);
             this.txtLname.Name = "txtLname";
-            this.txtLname.Size = new System.Drawing.Size(279, 26);
+            this.txtLname.Size = new System.Drawing.Size(279, 24);
             this.txtLname.TabIndex = 3;
             this.txtLname.TextChanged += new System.EventHandler(this.TxtLname_TextChanged);
             // 
             // lblFname
             // 
             this.lblFname.AutoSize = true;
-            this.lblFname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFname.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFname.Location = new System.Drawing.Point(10, 15);
             this.lblFname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFname.Name = "lblFname";
-            this.lblFname.Size = new System.Drawing.Size(90, 20);
+            this.lblFname.Size = new System.Drawing.Size(85, 18);
             this.lblFname.TabIndex = 0;
             this.lblFname.Text = "First Name:";
             // 
             // txtFname
             // 
             this.txtFname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFname.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFname.Location = new System.Drawing.Point(144, 6);
             this.txtFname.Margin = new System.Windows.Forms.Padding(2);
             this.txtFname.Name = "txtFname";
-            this.txtFname.Size = new System.Drawing.Size(283, 26);
+            this.txtFname.Size = new System.Drawing.Size(283, 24);
             this.txtFname.TabIndex = 1;
             this.txtFname.TextChanged += new System.EventHandler(this.TxtFname_TextChanged);
             // 
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Location = new System.Drawing.Point(922, 431);
             this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
@@ -182,17 +183,18 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.Location = new System.Drawing.Point(8, 95);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(867, 26);
+            this.txtSearch.Size = new System.Drawing.Size(867, 24);
             this.txtSearch.TabIndex = 11;
             this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtSearch_KeyPress);
             // 
             // btnUpdate
             // 
             this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.Location = new System.Drawing.Point(801, 431);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
@@ -204,7 +206,8 @@
             // 
             // btnEmployeeSearch
             // 
-            this.btnEmployeeSearch.Location = new System.Drawing.Point(879, 95);
+            this.btnEmployeeSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmployeeSearch.Location = new System.Drawing.Point(879, 93);
             this.btnEmployeeSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnEmployeeSearch.Name = "btnEmployeeSearch";
             this.btnEmployeeSearch.Size = new System.Drawing.Size(96, 26);
@@ -216,6 +219,7 @@
             // btnClear
             // 
             this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.Location = new System.Drawing.Point(862, 431);
             this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";

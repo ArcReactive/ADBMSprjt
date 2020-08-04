@@ -65,24 +65,24 @@
             // 
             // ProductYearCBox
             // 
-            this.ProductYearCBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductYearCBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductYearCBox.FormattingEnabled = true;
             this.ProductYearCBox.Items.AddRange(new object[] {
             "2017",
             "2018",
             "2019",
             "2020"});
-            this.ProductYearCBox.Location = new System.Drawing.Point(860, 328);
+            this.ProductYearCBox.Location = new System.Drawing.Point(860, 300);
             this.ProductYearCBox.Name = "ProductYearCBox";
-            this.ProductYearCBox.Size = new System.Drawing.Size(79, 28);
+            this.ProductYearCBox.Size = new System.Drawing.Size(79, 26);
             this.ProductYearCBox.TabIndex = 8;
             // 
             // ProductSearchTxt
             // 
-            this.ProductSearchTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductSearchTxt.Location = new System.Drawing.Point(689, 328);
+            this.ProductSearchTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductSearchTxt.Location = new System.Drawing.Point(704, 300);
             this.ProductSearchTxt.Name = "ProductSearchTxt";
-            this.ProductSearchTxt.Size = new System.Drawing.Size(165, 26);
+            this.ProductSearchTxt.Size = new System.Drawing.Size(150, 24);
             this.ProductSearchTxt.TabIndex = 7;
             // 
             // SearchProductQtyChart
@@ -95,11 +95,11 @@
             // 
             // SearchBtn
             // 
-            this.SearchBtn.BackgroundImage = global::ADBMSpro01.Properties.Resources.searchbutton;
+            this.SearchBtn.BackgroundImage = global::ADBMSpro01.Properties.Resources.searchBtn;
             this.SearchBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.SearchBtn.Location = new System.Drawing.Point(798, 360);
+            this.SearchBtn.Location = new System.Drawing.Point(777, 360);
             this.SearchBtn.Name = "SearchBtn";
-            this.SearchBtn.Size = new System.Drawing.Size(56, 50);
+            this.SearchBtn.Size = new System.Drawing.Size(113, 37);
             this.SearchBtn.TabIndex = 10;
             this.SearchBtn.TabStop = false;
             this.SearchBtn.Click += new System.EventHandler(this.SearchBtn_Click);

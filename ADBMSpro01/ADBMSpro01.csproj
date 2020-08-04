@@ -217,12 +217,16 @@
     <None Include="Resources\emp.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\updateBtn.png" />
+    <None Include="Resources\saveBtn.png" />
+    <None Include="Resources\searchBtn.png" />
     <None Include="Resources\searchbutton.png" />
     <None Include="Resources\close icon.jpg" />
     <None Include="Resources\log icon.png" />
     <None Include="Resources\login.png" />
     <None Include="Resources\marketing.png" />
     <None Include="Resources\logout.png" />
+    <None Include="Resources\clearBtn.png" />
     <Content Include="Resources\rev.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

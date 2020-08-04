@@ -149,7 +149,7 @@ namespace ADBMSpro01
                 AllproductChart.AxisX.Add(ax);
                 AllproductChart.AxisY.Add(new Axis
                 {
-                    Title = "QTY",
+                    Title = "Product Count",
                     LabelFormatter = value => value.ToString()
                 });
 

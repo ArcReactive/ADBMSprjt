@@ -28,23 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
+            this.employeesRegisteredPerYear = new LiveCharts.WinForms.CartesianChart();
             this.lblShowEmployeesDetailsCartisianChart = new System.Windows.Forms.Label();
             this.showEmployeeTableDataGridView = new System.Windows.Forms.DataGridView();
+            this.employeeStatusChart = new LiveCharts.WinForms.CartesianChart();
             ((System.ComponentModel.ISupportInitialize)(this.showEmployeeTableDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // cartesianChart1
+            // employeesRegisteredPerYear
             // 
-            this.cartesianChart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.employeesRegisteredPerYear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cartesianChart1.Location = new System.Drawing.Point(12, 52);
-            this.cartesianChart1.Name = "cartesianChart1";
-            this.cartesianChart1.Size = new System.Drawing.Size(1291, 239);
-            this.cartesianChart1.TabIndex = 1;
-            this.cartesianChart1.Text = "employeeStatusChart";
-            this.cartesianChart1.ChildChanged += new System.EventHandler<System.Windows.Forms.Integration.ChildChangedEventArgs>(this.CartesianChart1_ChildChanged);
+            this.employeesRegisteredPerYear.Location = new System.Drawing.Point(12, 52);
+            this.employeesRegisteredPerYear.Name = "employeesRegisteredPerYear";
+            this.employeesRegisteredPerYear.Size = new System.Drawing.Size(878, 239);
+            this.employeesRegisteredPerYear.TabIndex = 1;
+            this.employeesRegisteredPerYear.Text = "employeesRegisteredPerMonth";
+            this.employeesRegisteredPerYear.ChildChanged += new System.EventHandler<System.Windows.Forms.Integration.ChildChangedEventArgs>(this.CartesianChart1_ChildChanged);
             // 
             // lblShowEmployeesDetailsCartisianChart
             // 
@@ -71,14 +72,27 @@
             this.showEmployeeTableDataGridView.TabIndex = 3;
             this.showEmployeeTableDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ShowEmployeeTableDataGridView_CellContentClick);
             // 
+            // employeeStatusChart
+            // 
+            this.employeeStatusChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.employeeStatusChart.Location = new System.Drawing.Point(896, 52);
+            this.employeeStatusChart.Name = "employeeStatusChart";
+            this.employeeStatusChart.Size = new System.Drawing.Size(407, 239);
+            this.employeeStatusChart.TabIndex = 4;
+            this.employeeStatusChart.Text = "employeeStatusChart";
+            this.employeeStatusChart.ChildChanged += new System.EventHandler<System.Windows.Forms.Integration.ChildChangedEventArgs>(this.CartesianChart2_ChildChanged);
+            // 
             // EmployeeDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1315, 578);
+            this.Controls.Add(this.employeeStatusChart);
             this.Controls.Add(this.showEmployeeTableDataGridView);
             this.Controls.Add(this.lblShowEmployeesDetailsCartisianChart);
-            this.Controls.Add(this.cartesianChart1);
+            this.Controls.Add(this.employeesRegisteredPerYear);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EmployeeDetailsForm";
             this.Text = "EmployeeDetailsForm";
@@ -90,8 +104,9 @@
         }
 
         #endregion
-        private LiveCharts.WinForms.CartesianChart cartesianChart1;
+        private LiveCharts.WinForms.CartesianChart employeesRegisteredPerYear;
         private System.Windows.Forms.Label lblShowEmployeesDetailsCartisianChart;
         private System.Windows.Forms.DataGridView showEmployeeTableDataGridView;
+        private LiveCharts.WinForms.CartesianChart employeeStatusChart;
     }
 }

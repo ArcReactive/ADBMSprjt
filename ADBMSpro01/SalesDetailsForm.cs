@@ -33,6 +33,11 @@ namespace ADBMSpro01
         int[] qtySpro = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         float[] totSpro = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
+        private void Top5Chart_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
+        {
+
+        }
+
         private void SearchBtn_Click(object sender, EventArgs e)
         {
             //set data to product search charts.

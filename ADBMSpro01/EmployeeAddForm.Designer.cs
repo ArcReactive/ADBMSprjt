@@ -202,7 +202,7 @@
             this.btnUpdate.TabIndex = 13;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.BtnNew_Click);
+            //this.btnUpdate.Click += new System.EventHandler(this.BtnNew_Click);
             // 
             // btnEmployeeSearch
             // 

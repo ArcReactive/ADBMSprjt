@@ -57,7 +57,8 @@ namespace ADBMSpro01
         {
             mycon = dbcon.setCon();
 
-            string sql = "INSERT INTO Employee (Efname,Elname,Ebod,Eregiterdate,Estatus) " +
+            string sql = "INSERT INTO Employee " +
+                "(Efname,Elname,Ebod,Eregiterdate,Estatus) " +
                 "VALUES ('"+ txtFname.Text +"', '"+ txtLname.Text +"', '"+ DOBTimePicker.Value.Date +"', '"+ RDTimePicker.Value.Date +"', 'Deactive')";
 
             SqlCommand cmd = new SqlCommand(sql, mycon);
@@ -147,7 +148,12 @@ namespace ADBMSpro01
             //    "VALUES ('" + txtFname.Text + "', '" + txtLname.Text + "', '" + DOBTimePicker.Value.Date + "', '" + RDTimePicker.Value.Date + "') " +
             //    "WHERE Eid = eid";
 
-            string sql = "UPDATE Employee SET Efname='"+txtFname.Text+"', Elname='"+txtLname.Text+"', Ebod='"+DOBTimePicker.Value.Date+"', Eregiterdate='"+RDTimePicker.Value.Date+"' WHERE Eid="+eid+"";
+            string sql = "UPDATE Employee SET " +
+                "Efname='"+txtFname.Text+"', " +
+                "Elname='"+txtLname.Text+"', " +
+                "Ebod='"+DOBTimePicker.Value.Date+"', " +
+                "Eregiterdate='"+RDTimePicker.Value.Date+"' " +
+                "WHERE Eid="+eid+"";
 
             SqlCommand cmd = new SqlCommand(sql, mycon);
 

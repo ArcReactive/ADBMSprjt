@@ -31,12 +31,12 @@
             this.PnameTxt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.PqtyTxt = new System.Windows.Forms.TextBox();
+            this.SdateDTP = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.PcostTxt = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.SdateDTP = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.PqtyTxt = new System.Windows.Forms.TextBox();
             this.SalesDataGridView = new System.Windows.Forms.DataGridView();
             this.SearchSalesTxt = new System.Windows.Forms.TextBox();
             this.clearBtn = new System.Windows.Forms.PictureBox();
@@ -84,23 +84,24 @@
             this.panel1.Size = new System.Drawing.Size(754, 90);
             this.panel1.TabIndex = 2;
             // 
-            // label2
+            // SdateDTP
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(363, 10);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 18);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Product Quantity";
+            this.SdateDTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SdateDTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SdateDTP.Location = new System.Drawing.Point(487, 46);
+            this.SdateDTP.Name = "SdateDTP";
+            this.SdateDTP.Size = new System.Drawing.Size(257, 24);
+            this.SdateDTP.TabIndex = 8;
             // 
-            // PqtyTxt
+            // label4
             // 
-            this.PqtyTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PqtyTxt.Location = new System.Drawing.Point(487, 7);
-            this.PqtyTxt.Name = "PqtyTxt";
-            this.PqtyTxt.Size = new System.Drawing.Size(257, 24);
-            this.PqtyTxt.TabIndex = 2;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(363, 51);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(80, 18);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Sales Date";
             // 
             // label3
             // 
@@ -120,24 +121,23 @@
             this.PcostTxt.Size = new System.Drawing.Size(235, 24);
             this.PcostTxt.TabIndex = 4;
             // 
-            // label4
+            // label2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(363, 51);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 18);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Sales Date";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(363, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(118, 18);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Product Quantity";
             // 
-            // SdateDTP
+            // PqtyTxt
             // 
-            this.SdateDTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SdateDTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SdateDTP.Location = new System.Drawing.Point(487, 46);
-            this.SdateDTP.Name = "SdateDTP";
-            this.SdateDTP.Size = new System.Drawing.Size(257, 24);
-            this.SdateDTP.TabIndex = 8;
+            this.PqtyTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PqtyTxt.Location = new System.Drawing.Point(487, 7);
+            this.PqtyTxt.Name = "PqtyTxt";
+            this.PqtyTxt.Size = new System.Drawing.Size(257, 24);
+            this.PqtyTxt.TabIndex = 2;
             // 
             // SalesDataGridView
             // 

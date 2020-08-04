@@ -227,6 +227,9 @@
     <None Include="Resources\marketing.png" />
     <None Include="Resources\logout.png" />
     <None Include="Resources\clearBtn.png" />
+    <None Include="Resources\activeBtn.png" />
+    <None Include="Resources\deactiveBtn.png" />
+    <None Include="Resources\deleteBtn.png" />
     <Content Include="Resources\rev.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

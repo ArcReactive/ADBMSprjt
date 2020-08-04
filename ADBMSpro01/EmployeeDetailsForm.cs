@@ -34,11 +34,12 @@ namespace ADBMSpro01
             DataSet ds = new DataSet();
             sqlDA.Fill(ds, "Employee");
 
-           
+            mycon = dbcon.setCon();
 
+            //1st chart showing registered employees per year
             using (mycon)
             {
-
+               
                 SqlCommand cmd = new SqlCommand("GetCountEmployeeRE", mycon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 DR = cmd.ExecuteReader();
@@ -63,12 +64,63 @@ namespace ADBMSpro01
                 employeesRegisteredPerYear.AxisX.Add(ax);
                 employeesRegisteredPerYear.AxisY.Add(new Axis
                 {
-                    Title = "EmplyeeCount",
+                    Title = "EmployeeCount",
                     LabelFormatter = value => value.ToString()
                 });
 
                 DR = null;
             }
+
+            mycon = dbcon.setCon();
+
+            //chart 2 showing count of active employees
+            using (mycon)
+            {
+
+                SqlCommand cmd = new SqlCommand("GetActiveEmployeeCount", mycon);
+                cmd.CommandType = CommandType.StoredProcedure;
+                DR = cmd.ExecuteReader();
+
+
+                ColumnSeries col = new ColumnSeries() { DataLabels = true, Values = new ChartValues<int>() };
+
+                Axis ax = new Axis();
+
+                ax.Labels = new List<string>();
+
+                DR.Read();
+
+                int val1 = (int)DR.GetInt32(0);
+                col.Values.Add(val1);
+                ax.Labels.Add("active");
+
+                dbcon.setCon().Close();
+
+                DR = null;
+
+                SqlCommand cmd1 = new SqlCommand("GetDectiveEmployeeCount", mycon);
+                cmd1.CommandType = CommandType.StoredProcedure;
+                DR = cmd1.ExecuteReader();
+
+                DR.Read();
+
+                int val2 = (int)DR.GetInt32(0);
+                col.Values.Add(val2);
+                ax.Labels.Add("deactive");
+
+                
+                employeeStatusChart.Series.Add(col);
+                employeeStatusChart.AxisX.Add(ax);
+                employeeStatusChart.AxisY.Add(new Axis
+                {
+                    Title = "EmplyoeeCount",
+                    LabelFormatter = value => value.ToString()
+                });
+
+                DR = null;
+
+            }
+            
         }
 
         private void Label1_Click(object sender, EventArgs e)

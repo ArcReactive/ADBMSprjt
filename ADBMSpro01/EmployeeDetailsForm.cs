@@ -55,8 +55,8 @@ namespace ADBMSpro01
                 {
                     int value = (int)DR.GetInt32(0);
                     col.Values.Add(value);
-                    String name = (String)DR.GetString(1);
-                    ax.Labels.Add(name);
+                    int name = (int)DR.GetInt32(1);
+                    ax.Labels.Add(name.ToString());
                     //i++;
                 }
                 employeesRegisteredPerYear.Series.Add(col);

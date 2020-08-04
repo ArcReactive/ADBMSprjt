@@ -54,7 +54,7 @@ namespace ADBMSpro01
                         i++;
                     }
                 }
-                DR = null;
+                DR.Close();
             }
 
             //add series to chart.

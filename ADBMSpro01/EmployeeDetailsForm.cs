@@ -68,7 +68,7 @@ namespace ADBMSpro01
                     LabelFormatter = value => value.ToString()
                 });
 
-                DR = null;
+                DR.Close();
             }
 
             mycon = dbcon.setCon();
@@ -80,7 +80,6 @@ namespace ADBMSpro01
                 SqlCommand cmd = new SqlCommand("GetActiveEmployeeCount", mycon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 DR = cmd.ExecuteReader();
-
 
                 ColumnSeries col = new ColumnSeries() { DataLabels = true, Values = new ChartValues<int>() };
 
@@ -94,11 +93,9 @@ namespace ADBMSpro01
                 col.Values.Add(val1);
                 ax.Labels.Add("active");
 
-                dbcon.setCon().Close();
+                DR.Close();
 
-                DR = null;
-
-                SqlCommand cmd1 = new SqlCommand("GetDectiveEmployeeCount", mycon);
+                SqlCommand cmd1 = new SqlCommand("GetDeactiveEmployeeCount", mycon);
                 cmd1.CommandType = CommandType.StoredProcedure;
                 DR = cmd1.ExecuteReader();
 
@@ -108,7 +105,6 @@ namespace ADBMSpro01
                 col.Values.Add(val2);
                 ax.Labels.Add("deactive");
 
-                
                 employeeStatusChart.Series.Add(col);
                 employeeStatusChart.AxisX.Add(ax);
                 employeeStatusChart.AxisY.Add(new Axis
@@ -117,10 +113,12 @@ namespace ADBMSpro01
                     LabelFormatter = value => value.ToString()
                 });
 
-                DR = null;
+                DR.Close();
 
             }
+
             
+
         }
 
         private void Label1_Click(object sender, EventArgs e)

@@ -91,7 +91,7 @@ namespace ADBMSpro01
                     }
                 }
                 i = 0;
-                DR = null;
+                DR.Close();
             }
 
             //add series to chart.
@@ -136,7 +136,7 @@ namespace ADBMSpro01
                     }
                 }
                 i = 0;
-                DR = null;
+                DR.Close();
             }
 
             //add series to chart.
@@ -194,7 +194,7 @@ namespace ADBMSpro01
                         i++;
                     }
                 }
-                DR = null;
+                DR.Close();
             }
 
             //set product 2.
@@ -218,7 +218,7 @@ namespace ADBMSpro01
                         i++;
                     }
                 }
-                DR = null;
+                DR.Close();
             }
 
             //set product 3.
@@ -242,7 +242,7 @@ namespace ADBMSpro01
                         i++;
                     }
                 }
-                DR = null;
+                DR.Close();
             }
 
             //set product 4.
@@ -266,7 +266,7 @@ namespace ADBMSpro01
                         i++;
                     }
                 }
-                DR = null;
+                DR.Close();
             }
 
             //set product 5.
@@ -290,7 +290,7 @@ namespace ADBMSpro01
                         i++;
                     }
                 }
-                DR = null;
+                DR.Close();
             }
 
             //add 5 series to chart.

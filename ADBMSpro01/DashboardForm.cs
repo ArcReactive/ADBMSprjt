@@ -55,7 +55,7 @@ namespace ADBMSpro01
                         i++;
                     }
                 }
-                DR = null;
+                DR.Close();
             }
 
             //set cost.
@@ -79,7 +79,7 @@ namespace ADBMSpro01
                         i++;
                     }
                 }
-                DR = null;
+                DR.Close();
             }
 
             //add two series to chart.
@@ -153,7 +153,7 @@ namespace ADBMSpro01
                     LabelFormatter = value => value.ToString()
                 });
 
-                DR = null;
+                DR.Close();
             }
         }
 

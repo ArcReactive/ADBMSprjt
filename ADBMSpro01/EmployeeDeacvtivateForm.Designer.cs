@@ -28,86 +28,108 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblSearch = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.showEmployeeTableDataGridView = new System.Windows.Forms.DataGridView();
+            this.btnEmployeeSearchPB = new System.Windows.Forms.PictureBox();
+            this.btnActivateDeactivateEmployee = new System.Windows.Forms.PictureBox();
+            this.btnDeleteEmployee = new System.Windows.Forms.PictureBox();
+            this.btnDeactivateEmployeePB = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.showEmployeeTableDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEmployeeSearchPB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnActivateDeactivateEmployee)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDeleteEmployee)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDeactivateEmployeePB)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblSearch
+            // txtSearch
             // 
-            this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(12, 9);
-            this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(53, 17);
-            this.lblSearch.TabIndex = 0;
-            this.lblSearch.Text = "Search";
-            this.lblSearch.Click += new System.EventHandler(this.Label1_Click_1);
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(161, 6);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(1142, 30);
+            this.txtSearch.TabIndex = 1;
+            this.txtSearch.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
-            // textBox1
+            // showEmployeeTableDataGridView
             // 
-            this.textBox1.Location = new System.Drawing.Point(64, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1239, 22);
-            this.textBox1.TabIndex = 1;
+            this.showEmployeeTableDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.showEmployeeTableDataGridView.Location = new System.Drawing.Point(12, 56);
+            this.showEmployeeTableDataGridView.Name = "showEmployeeTableDataGridView";
+            this.showEmployeeTableDataGridView.RowHeadersWidth = 51;
+            this.showEmployeeTableDataGridView.RowTemplate.Height = 24;
+            this.showEmployeeTableDataGridView.Size = new System.Drawing.Size(1291, 169);
+            this.showEmployeeTableDataGridView.TabIndex = 2;
+            this.showEmployeeTableDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ShowEmployeeTableDataGridView_CellContentClick);
             // 
-            // dataGridView1
+            // btnEmployeeSearchPB
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 45);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1291, 150);
-            this.dataGridView1.TabIndex = 2;
+            this.btnEmployeeSearchPB.BackgroundImage = global::ADBMSpro01.Properties.Resources.searchBtn;
+            this.btnEmployeeSearchPB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEmployeeSearchPB.Location = new System.Drawing.Point(12, 6);
+            this.btnEmployeeSearchPB.Name = "btnEmployeeSearchPB";
+            this.btnEmployeeSearchPB.Size = new System.Drawing.Size(143, 30);
+            this.btnEmployeeSearchPB.TabIndex = 5;
+            this.btnEmployeeSearchPB.TabStop = false;
+            this.btnEmployeeSearchPB.Click += new System.EventHandler(this.BtnEmployeeSearchPB_Click);
             // 
-            // button1
+            // btnActivateDeactivateEmployee
             // 
-            this.button1.Location = new System.Drawing.Point(1228, 512);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 40);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnActivateDeactivateEmployee.Location = new System.Drawing.Point(1203, 516);
+            this.btnActivateDeactivateEmployee.Name = "btnActivateDeactivateEmployee";
+            this.btnActivateDeactivateEmployee.Size = new System.Drawing.Size(100, 50);
+            this.btnActivateDeactivateEmployee.TabIndex = 6;
+            this.btnActivateDeactivateEmployee.TabStop = false;
+            this.btnActivateDeactivateEmployee.Click += new System.EventHandler(this.BtnActivateDeactivateEmployee_Click);
             // 
-            // button2
+            // btnDeleteEmployee
             // 
-            this.button2.Location = new System.Drawing.Point(1147, 512);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 40);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.btnDeleteEmployee.Location = new System.Drawing.Point(1097, 516);
+            this.btnDeleteEmployee.Name = "btnDeleteEmployee";
+            this.btnDeleteEmployee.Size = new System.Drawing.Size(100, 50);
+            this.btnDeleteEmployee.TabIndex = 7;
+            this.btnDeleteEmployee.TabStop = false;
+            this.btnDeleteEmployee.Click += new System.EventHandler(this.BtnDeleteEmployee_Click);
+            // 
+            // btnDeactivateEmployeePB
+            // 
+            this.btnDeactivateEmployeePB.Location = new System.Drawing.Point(991, 516);
+            this.btnDeactivateEmployeePB.Name = "btnDeactivateEmployeePB";
+            this.btnDeactivateEmployeePB.Size = new System.Drawing.Size(100, 50);
+            this.btnDeactivateEmployeePB.TabIndex = 8;
+            this.btnDeactivateEmployeePB.TabStop = false;
+            this.btnDeactivateEmployeePB.Click += new System.EventHandler(this.BtnDeactivateEmployee_Click);
             // 
             // EmployeeDeacvtivateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1315, 578);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.lblSearch);
+            this.Controls.Add(this.btnDeactivateEmployeePB);
+            this.Controls.Add(this.btnDeleteEmployee);
+            this.Controls.Add(this.btnActivateDeactivateEmployee);
+            this.Controls.Add(this.btnEmployeeSearchPB);
+            this.Controls.Add(this.showEmployeeTableDataGridView);
+            this.Controls.Add(this.txtSearch);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EmployeeDeacvtivateForm";
             this.Text = "EmployeeDeavtivateForm";
             this.Load += new System.EventHandler(this.EmployeeDeacvtivateForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showEmployeeTableDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEmployeeSearchPB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnActivateDeactivateEmployee)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDeleteEmployee)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDeactivateEmployeePB)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblSearch;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.DataGridView showEmployeeTableDataGridView;
+        private System.Windows.Forms.PictureBox btnEmployeeSearchPB;
+        private System.Windows.Forms.PictureBox btnActivateDeactivateEmployee;
+        private System.Windows.Forms.PictureBox btnDeleteEmployee;
+        private System.Windows.Forms.PictureBox btnDeactivateEmployeePB;
     }
 }

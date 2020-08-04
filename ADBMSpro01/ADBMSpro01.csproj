@@ -230,6 +230,8 @@
     <None Include="Resources\activeBtn.png" />
     <None Include="Resources\deactiveBtn.png" />
     <None Include="Resources\deleteBtn.png" />
+    <None Include="Resources\deactivateBtn.png" />
+    <None Include="Resources\activateBtn.png" />
     <Content Include="Resources\rev.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

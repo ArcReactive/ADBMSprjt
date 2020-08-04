@@ -73,6 +73,16 @@ namespace ADBMSpro01.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap activeBtn {
+            get {
+                object obj = ResourceManager.GetObject("activeBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap clearBtn {
             get {
                 object obj = ResourceManager.GetObject("clearBtn", resourceCulture);
@@ -86,6 +96,26 @@ namespace ADBMSpro01.Properties {
         internal static System.Drawing.Bitmap close_icon {
             get {
                 object obj = ResourceManager.GetObject("close icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap deactiveBtn {
+            get {
+                object obj = ResourceManager.GetObject("deactiveBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap deleteBtn {
+            get {
+                object obj = ResourceManager.GetObject("deleteBtn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

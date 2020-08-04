@@ -29,52 +29,61 @@
         private void InitializeComponent()
         {
             this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.lblShowEmployeesDetailsCartisianChart = new System.Windows.Forms.Label();
+            this.showEmployeeTableDataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.showEmployeeTableDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // cartesianChart1
             // 
-            this.cartesianChart1.Location = new System.Drawing.Point(12, 29);
+            this.cartesianChart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cartesianChart1.Location = new System.Drawing.Point(12, 52);
             this.cartesianChart1.Name = "cartesianChart1";
-            this.cartesianChart1.Size = new System.Drawing.Size(1291, 206);
+            this.cartesianChart1.Size = new System.Drawing.Size(1291, 239);
             this.cartesianChart1.TabIndex = 1;
-            this.cartesianChart1.Text = "qcartesianChart1";
+            this.cartesianChart1.Text = "employeeStatusChart";
+            this.cartesianChart1.ChildChanged += new System.EventHandler<System.Windows.Forms.Integration.ChildChangedEventArgs>(this.CartesianChart1_ChildChanged);
             // 
-            // label1
+            // lblShowEmployeesDetailsCartisianChart
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
+            this.lblShowEmployeesDetailsCartisianChart.AutoSize = true;
+            this.lblShowEmployeesDetailsCartisianChart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShowEmployeesDetailsCartisianChart.Location = new System.Drawing.Point(12, 9);
+            this.lblShowEmployeesDetailsCartisianChart.Name = "lblShowEmployeesDetailsCartisianChart";
+            this.lblShowEmployeesDetailsCartisianChart.Size = new System.Drawing.Size(258, 25);
+            this.lblShowEmployeesDetailsCartisianChart.TabIndex = 2;
+            this.lblShowEmployeesDetailsCartisianChart.Text = "Employees status per month";
+            this.lblShowEmployeesDetailsCartisianChart.Click += new System.EventHandler(this.Label1_Click);
             // 
-            // dataGridView1
+            // showEmployeeTableDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 241);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1291, 150);
-            this.dataGridView1.TabIndex = 3;
+            this.showEmployeeTableDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.showEmployeeTableDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.showEmployeeTableDataGridView.Location = new System.Drawing.Point(12, 312);
+            this.showEmployeeTableDataGridView.Name = "showEmployeeTableDataGridView";
+            this.showEmployeeTableDataGridView.RowHeadersWidth = 51;
+            this.showEmployeeTableDataGridView.RowTemplate.Height = 24;
+            this.showEmployeeTableDataGridView.Size = new System.Drawing.Size(1291, 254);
+            this.showEmployeeTableDataGridView.TabIndex = 3;
+            this.showEmployeeTableDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ShowEmployeeTableDataGridView_CellContentClick);
             // 
             // EmployeeDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1315, 578);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.showEmployeeTableDataGridView);
+            this.Controls.Add(this.lblShowEmployeesDetailsCartisianChart);
             this.Controls.Add(this.cartesianChart1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EmployeeDetailsForm";
             this.Text = "EmployeeDetailsForm";
             this.Load += new System.EventHandler(this.EmployeeDetailsForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showEmployeeTableDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -82,7 +91,7 @@
 
         #endregion
         private LiveCharts.WinForms.CartesianChart cartesianChart1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label lblShowEmployeesDetailsCartisianChart;
+        private System.Windows.Forms.DataGridView showEmployeeTableDataGridView;
     }
 }

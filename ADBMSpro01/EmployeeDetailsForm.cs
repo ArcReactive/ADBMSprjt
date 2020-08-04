@@ -34,7 +34,7 @@ namespace ADBMSpro01
             DataSet ds = new DataSet();
             sqlDA.Fill(ds, "Employee");
 
-            showEmployeeTableDataGridView.DataSource = ds.Tables["Employee"];
+           
 
             using (mycon)
             {
@@ -55,8 +55,8 @@ namespace ADBMSpro01
                 {
                     int value = (int)DR.GetInt32(0);
                     col.Values.Add(value);
-                    String name = (String)DR.GetString(1);
-                    ax.Labels.Add(name);
+                    int name = (int)DR.GetInt32(1);
+                    ax.Labels.Add(name.ToString());
                     //i++;
                 }
                 employeesRegisteredPerYear.Series.Add(col);
@@ -76,17 +76,17 @@ namespace ADBMSpro01
 
         }
 
-        private void ShowEmployeeTableDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void CartesianChart1_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
         {
 
         }
 
         private void CartesianChart2_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
+        {
+
+        }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

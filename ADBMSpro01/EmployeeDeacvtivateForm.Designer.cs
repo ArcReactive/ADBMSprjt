@@ -74,6 +74,9 @@
             // 
             // btnActivateDeactivateEmployee
             // 
+            this.btnActivateDeactivateEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnActivateDeactivateEmployee.BackgroundImage = global::ADBMSpro01.Properties.Resources.activeBtn;
+            this.btnActivateDeactivateEmployee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnActivateDeactivateEmployee.Location = new System.Drawing.Point(1203, 516);
             this.btnActivateDeactivateEmployee.Name = "btnActivateDeactivateEmployee";
             this.btnActivateDeactivateEmployee.Size = new System.Drawing.Size(100, 50);
@@ -83,6 +86,9 @@
             // 
             // btnDeleteEmployee
             // 
+            this.btnDeleteEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDeleteEmployee.BackgroundImage = global::ADBMSpro01.Properties.Resources.deleteBtn;
+            this.btnDeleteEmployee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDeleteEmployee.Location = new System.Drawing.Point(1097, 516);
             this.btnDeleteEmployee.Name = "btnDeleteEmployee";
             this.btnDeleteEmployee.Size = new System.Drawing.Size(100, 50);
@@ -92,6 +98,9 @@
             // 
             // btnDeactivateEmployeePB
             // 
+            this.btnDeactivateEmployeePB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDeactivateEmployeePB.BackgroundImage = global::ADBMSpro01.Properties.Resources.deactiveBtn;
+            this.btnDeactivateEmployeePB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDeactivateEmployeePB.Location = new System.Drawing.Point(991, 516);
             this.btnDeactivateEmployeePB.Name = "btnDeactivateEmployeePB";
             this.btnDeactivateEmployeePB.Size = new System.Drawing.Size(100, 50);

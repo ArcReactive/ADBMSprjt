@@ -7,6 +7,7 @@ namespace ADBMSpro01
 {
     public partial class EmployeeAddForm : Form
     {
+        private int eid = -1;
         //Database connection.
         public static SqlConnection mycon = null;
         DBconnection dbcon = new DBconnection();
@@ -46,12 +47,6 @@ namespace ADBMSpro01
 
         }
 
-        //update
-        private void BtnNew_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void BtnEdit_Click(object sender, EventArgs e)
         {
 
@@ -70,6 +65,13 @@ namespace ADBMSpro01
             cmd.ExecuteNonQuery();
 
             MessageBox.Show("New Employee added successfull.");
+
+            string sql1 = "SELECT * FROM Employee";
+            SqlDataAdapter sqlDA = new SqlDataAdapter(sql1, mycon);
+            DataSet ds = new DataSet();
+            sqlDA.Fill(ds, "Employee");
+
+            showEmployeeTableDataGridView.DataSource = ds.Tables["Employee"];
 
         }
 
@@ -127,11 +129,37 @@ namespace ADBMSpro01
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = showEmployeeTableDataGridView.Rows[e.RowIndex];
+                eid = (int)row.Cells[0].Value;
                 txtFname.Text = row.Cells[1].Value.ToString();
                 txtLname.Text = row.Cells[2].Value.ToString();
                 DOBTimePicker.Value = (DateTime)row.Cells[3].Value;
                 RDTimePicker.Value = (DateTime)row.Cells[4].Value;
             }
+        }
+
+        private void BtnUpdate_Click(object sender, EventArgs e)
+        {
+            mycon = dbcon.setCon();
+
+
+
+            //string sql = "UPDATE Employee (Efname,Elname,Ebod,Eregiterdate) " +
+            //    "VALUES ('" + txtFname.Text + "', '" + txtLname.Text + "', '" + DOBTimePicker.Value.Date + "', '" + RDTimePicker.Value.Date + "') " +
+            //    "WHERE Eid = eid";
+
+            string sql = "UPDATE Employee SET Efname='"+txtFname.Text+"', Elname='"+txtLname.Text+"', Ebod='"+DOBTimePicker.Value.Date+"', Eregiterdate='"+RDTimePicker.Value.Date+"' WHERE Eid="+eid+"";
+
+            SqlCommand cmd = new SqlCommand(sql, mycon);
+
+
+            cmd.ExecuteNonQuery();
+
+            string sql2 = "SELECT * FROM Employee";
+            SqlDataAdapter sqlDA = new SqlDataAdapter(sql2, mycon);
+            DataSet ds = new DataSet();
+            sqlDA.Fill(ds, "Employee");
+
+            showEmployeeTableDataGridView.DataSource = ds.Tables["Employee"];
         }
     }
 }

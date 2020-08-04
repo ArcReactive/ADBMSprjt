@@ -156,5 +156,10 @@ namespace ADBMSpro01
                 DR = null;
             }
         }
+
+        private void SalesChart_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
+        {
+
+        }
     }
 }

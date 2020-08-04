@@ -100,17 +100,10 @@ namespace ADBMSpro01
         {
 
         }
-        //search
+        
         private void BtnSearch_Click(object sender, EventArgs e)
         {
-            showEmployeeTableDataGridView.DataSource = null;
-            string sql = "SELECT * FROM Employee WHERE Efname = '"+txtSearch.Text+"'";
-
-            SqlDataAdapter sqlDA = new SqlDataAdapter(sql, mycon);
-            DataSet ds = new DataSet();
-            sqlDA.Fill(ds, "Employee");
-
-            showEmployeeTableDataGridView.DataSource = ds.Tables["Employee"];
+            
         }
 
         //clear
@@ -137,7 +130,7 @@ namespace ADBMSpro01
                 RDTimePicker.Value = (DateTime)row.Cells[4].Value;
             }
         }
-
+        //update
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
             mycon = dbcon.setCon();
@@ -149,11 +142,11 @@ namespace ADBMSpro01
             //    "WHERE Eid = eid";
 
             string sql = "UPDATE Employee SET " +
-                "Efname='"+txtFname.Text+"', " +
-                "Elname='"+txtLname.Text+"', " +
-                "Ebod='"+DOBTimePicker.Value.Date+"', " +
-                "Eregiterdate='"+RDTimePicker.Value.Date+"' " +
-                "WHERE Eid="+eid+"";
+                "Efname='" + txtFname.Text + "', " +
+                "Elname='" + txtLname.Text + "', " +
+                "Ebod='" + DOBTimePicker.Value.Date + "', " +
+                "Eregiterdate='" + RDTimePicker.Value.Date + "' " +
+                "WHERE Eid=" + eid + "";
 
             SqlCommand cmd = new SqlCommand(sql, mycon);
 
@@ -162,6 +155,25 @@ namespace ADBMSpro01
 
             string sql2 = "SELECT * FROM Employee";
             SqlDataAdapter sqlDA = new SqlDataAdapter(sql2, mycon);
+            DataSet ds = new DataSet();
+            sqlDA.Fill(ds, "Employee");
+
+            showEmployeeTableDataGridView.DataSource = ds.Tables["Employee"];
+        }
+
+        
+        private void BtnUpdate_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        //search
+        private void BtnEmployeeSearchPB_Click(object sender, EventArgs e)
+        {
+            showEmployeeTableDataGridView.DataSource = null;
+            string sql = "SELECT * FROM Employee WHERE Efname = '" + txtSearch.Text + "'";
+
+            SqlDataAdapter sqlDA = new SqlDataAdapter(sql, mycon);
             DataSet ds = new DataSet();
             sqlDA.Fill(ds, "Employee");
 

@@ -37,14 +37,18 @@
             this.txtLname = new System.Windows.Forms.TextBox();
             this.lblFname = new System.Windows.Forms.Label();
             this.txtFname = new System.Windows.Forms.TextBox();
-            this.btnSave = new System.Windows.Forms.Button();
             this.showEmployeeTableDataGridView = new System.Windows.Forms.DataGridView();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnEmployeeSearch = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
+            this.btnEmployeeSearchPB = new System.Windows.Forms.PictureBox();
+            this.BtnClear = new System.Windows.Forms.PictureBox();
+            this.BtnUpdate = new System.Windows.Forms.PictureBox();
+            this.BtnSave = new System.Windows.Forms.PictureBox();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showEmployeeTableDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEmployeeSearchPB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnClear)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnUpdate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSave)).BeginInit();
             this.SuspendLayout();
             // 
             // panel
@@ -150,19 +154,6 @@
             this.txtFname.TabIndex = 1;
             this.txtFname.TextChanged += new System.EventHandler(this.TxtFname_TextChanged);
             // 
-            // btnSave
-            // 
-            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(922, 431);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(56, 29);
-            this.btnSave.TabIndex = 2;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.BtnSave_Click);
-            // 
             // showEmployeeTableDataGridView
             // 
             this.showEmployeeTableDataGridView.AllowUserToAddRows = false;
@@ -187,59 +178,68 @@
             this.txtSearch.Location = new System.Drawing.Point(8, 95);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(867, 24);
+            this.txtSearch.Size = new System.Drawing.Size(849, 24);
             this.txtSearch.TabIndex = 11;
             this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtSearch_KeyPress);
             // 
-            // btnUpdate
+            // btnEmployeeSearchPB
             // 
-            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(801, 431);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(56, 29);
-            this.btnUpdate.TabIndex = 13;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            //this.btnUpdate.Click += new System.EventHandler(this.BtnNew_Click);
+            this.btnEmployeeSearchPB.BackgroundImage = global::ADBMSpro01.Properties.Resources.searchBtn;
+            this.btnEmployeeSearchPB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEmployeeSearchPB.Location = new System.Drawing.Point(874, 88);
+            this.btnEmployeeSearchPB.Name = "btnEmployeeSearchPB";
+            this.btnEmployeeSearchPB.Size = new System.Drawing.Size(104, 32);
+            this.btnEmployeeSearchPB.TabIndex = 16;
+            this.btnEmployeeSearchPB.TabStop = false;
+            this.btnEmployeeSearchPB.Click += new System.EventHandler(this.BtnEmployeeSearchPB_Click);
             // 
-            // btnEmployeeSearch
+            // BtnClear
             // 
-            this.btnEmployeeSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployeeSearch.Location = new System.Drawing.Point(879, 93);
-            this.btnEmployeeSearch.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEmployeeSearch.Name = "btnEmployeeSearch";
-            this.btnEmployeeSearch.Size = new System.Drawing.Size(96, 26);
-            this.btnEmployeeSearch.TabIndex = 14;
-            this.btnEmployeeSearch.Text = "Search";
-            this.btnEmployeeSearch.UseVisualStyleBackColor = true;
-            this.btnEmployeeSearch.Click += new System.EventHandler(this.BtnSearch_Click);
+            this.BtnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnClear.BackgroundImage = global::ADBMSpro01.Properties.Resources.clearBtn;
+            this.BtnClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnClear.Location = new System.Drawing.Point(614, 422);
+            this.BtnClear.Name = "BtnClear";
+            this.BtnClear.Size = new System.Drawing.Size(116, 40);
+            this.BtnClear.TabIndex = 19;
+            this.BtnClear.TabStop = false;
+            this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
-            // btnClear
+            // BtnUpdate
             // 
-            this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(862, 431);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(56, 28);
-            this.btnClear.TabIndex = 15;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);
+            this.BtnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnUpdate.BackgroundImage = global::ADBMSpro01.Properties.Resources.updateBtn;
+            this.BtnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnUpdate.Location = new System.Drawing.Point(736, 422);
+            this.BtnUpdate.Name = "BtnUpdate";
+            this.BtnUpdate.Size = new System.Drawing.Size(116, 40);
+            this.BtnUpdate.TabIndex = 18;
+            this.BtnUpdate.TabStop = false;
+            this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
+            // 
+            // BtnSave
+            // 
+            this.BtnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnSave.BackgroundImage = global::ADBMSpro01.Properties.Resources.saveBtn;
+            this.BtnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnSave.Location = new System.Drawing.Point(858, 422);
+            this.BtnSave.Name = "BtnSave";
+            this.BtnSave.Size = new System.Drawing.Size(116, 40);
+            this.BtnSave.TabIndex = 17;
+            this.BtnSave.TabStop = false;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // EmployeeAddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(986, 470);
-            this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.btnEmployeeSearch);
-            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.BtnClear);
+            this.Controls.Add(this.BtnUpdate);
+            this.Controls.Add(this.BtnSave);
+            this.Controls.Add(this.btnEmployeeSearchPB);
             this.Controls.Add(this.showEmployeeTableDataGridView);
             this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.panel);
             this.Name = "EmployeeAddForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -248,6 +248,10 @@
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showEmployeeTableDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEmployeeSearchPB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnClear)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnUpdate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSave)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,13 +266,13 @@
         private System.Windows.Forms.TextBox txtLname;
         private System.Windows.Forms.Label lblFname;
         private System.Windows.Forms.TextBox txtFname;
-        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.DataGridView showEmployeeTableDataGridView;
         private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnEmployeeSearch;
-        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.DateTimePicker RDTimePicker;
         private System.Windows.Forms.DateTimePicker DOBTimePicker;
+        private System.Windows.Forms.PictureBox btnEmployeeSearchPB;
+        private System.Windows.Forms.PictureBox BtnClear;
+        private System.Windows.Forms.PictureBox BtnUpdate;
+        private System.Windows.Forms.PictureBox BtnSave;
     }
 }

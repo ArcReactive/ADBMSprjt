@@ -26,5 +26,10 @@ namespace ADBMSpro01
         {
 
         }
+
+        private void ShowEmployeeTableDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

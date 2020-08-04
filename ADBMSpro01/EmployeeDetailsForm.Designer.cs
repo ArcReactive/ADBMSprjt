@@ -30,8 +30,8 @@
         {
             this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.showEmployeeTableDataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.showEmployeeTableDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // cartesianChart1
@@ -52,29 +52,30 @@
             this.label1.Text = "label1";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
-            // dataGridView1
+            // showEmployeeTableDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 241);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1291, 150);
-            this.dataGridView1.TabIndex = 3;
+            this.showEmployeeTableDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.showEmployeeTableDataGridView.Location = new System.Drawing.Point(12, 241);
+            this.showEmployeeTableDataGridView.Name = "showEmployeeTableDataGridView";
+            this.showEmployeeTableDataGridView.RowHeadersWidth = 51;
+            this.showEmployeeTableDataGridView.RowTemplate.Height = 24;
+            this.showEmployeeTableDataGridView.Size = new System.Drawing.Size(1291, 150);
+            this.showEmployeeTableDataGridView.TabIndex = 3;
+            this.showEmployeeTableDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ShowEmployeeTableDataGridView_CellContentClick);
             // 
             // EmployeeDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1315, 578);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.showEmployeeTableDataGridView);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cartesianChart1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EmployeeDetailsForm";
             this.Text = "EmployeeDetailsForm";
             this.Load += new System.EventHandler(this.EmployeeDetailsForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showEmployeeTableDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -83,6 +84,6 @@
         #endregion
         private LiveCharts.WinForms.CartesianChart cartesianChart1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView showEmployeeTableDataGridView;
     }
 }

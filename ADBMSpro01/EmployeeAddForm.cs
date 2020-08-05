@@ -47,10 +47,6 @@ namespace ADBMSpro01
 
         }
 
-        private void BtnEdit_Click(object sender, EventArgs e)
-        {
-
-        }
 
         //save
         private void BtnSave_Click(object sender, EventArgs e)
@@ -76,10 +72,6 @@ namespace ADBMSpro01
 
         }
 
-        private void TxtRD_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void TxtSearch_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -91,20 +83,12 @@ namespace ADBMSpro01
 
         }
 
-        private void TxtDoB_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void TxtFname_TextChanged(object sender, EventArgs e)
         {
 
         }
         
-        private void BtnSearch_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         //clear
         private void BtnClear_Click(object sender, EventArgs e)
@@ -161,11 +145,6 @@ namespace ADBMSpro01
             showEmployeeTableDataGridView.DataSource = ds.Tables["Employee"];
         }
 
-        
-        private void BtnUpdate_Click_1(object sender, EventArgs e)
-        {
-            
-        }
 
         //search
         private void BtnEmployeeSearchPB_Click(object sender, EventArgs e)

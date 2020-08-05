@@ -222,6 +222,7 @@ namespace ADBMSpro01
             };
 
             //clear values.
+            i = 0;
             while (i <= 11)
             {
                 hours[i] = 0;

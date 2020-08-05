@@ -161,9 +161,9 @@
             // 
             this.clearBtn.BackgroundImage = global::ADBMSpro01.Properties.Resources.clearBtn;
             this.clearBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.clearBtn.Location = new System.Drawing.Point(614, 429);
+            this.clearBtn.Location = new System.Drawing.Point(644, 429);
             this.clearBtn.Name = "clearBtn";
-            this.clearBtn.Size = new System.Drawing.Size(116, 40);
+            this.clearBtn.Size = new System.Drawing.Size(106, 40);
             this.clearBtn.TabIndex = 13;
             this.clearBtn.TabStop = false;
             this.clearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
@@ -172,9 +172,9 @@
             // 
             this.updateBtn.BackgroundImage = global::ADBMSpro01.Properties.Resources.updateBtn;
             this.updateBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.updateBtn.Location = new System.Drawing.Point(736, 429);
+            this.updateBtn.Location = new System.Drawing.Point(756, 429);
             this.updateBtn.Name = "updateBtn";
-            this.updateBtn.Size = new System.Drawing.Size(116, 40);
+            this.updateBtn.Size = new System.Drawing.Size(106, 40);
             this.updateBtn.TabIndex = 12;
             this.updateBtn.TabStop = false;
             this.updateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
@@ -183,9 +183,9 @@
             // 
             this.saveBtn.BackgroundImage = global::ADBMSpro01.Properties.Resources.saveBtn;
             this.saveBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.saveBtn.Location = new System.Drawing.Point(858, 429);
+            this.saveBtn.Location = new System.Drawing.Point(868, 429);
             this.saveBtn.Name = "saveBtn";
-            this.saveBtn.Size = new System.Drawing.Size(116, 40);
+            this.saveBtn.Size = new System.Drawing.Size(106, 40);
             this.saveBtn.TabIndex = 11;
             this.saveBtn.TabStop = false;
             this.saveBtn.Click += new System.EventHandler(this.SaveBtn_Click);

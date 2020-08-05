@@ -41,11 +41,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(444, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(38, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 13);
+            this.label1.Size = new System.Drawing.Size(219, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Sales Details";
+            this.label1.Text = "Sales Top 5 Product Details";
             // 
             // Top5Chart
             // 
@@ -60,7 +61,7 @@
             // 
             this.SearchProductTotChart.Location = new System.Drawing.Point(12, 360);
             this.SearchProductTotChart.Name = "SearchProductTotChart";
-            this.SearchProductTotChart.Size = new System.Drawing.Size(771, 110);
+            this.SearchProductTotChart.Size = new System.Drawing.Size(960, 110);
             this.SearchProductTotChart.TabIndex = 9;
             this.SearchProductTotChart.Text = "SearchProductTotChart";
             // 
@@ -73,22 +74,23 @@
             "2018",
             "2019",
             "2020"});
-            this.ProductYearCBox.Location = new System.Drawing.Point(895, 328);
+            this.ProductYearCBox.Location = new System.Drawing.Point(129, 256);
             this.ProductYearCBox.Name = "ProductYearCBox";
-            this.ProductYearCBox.Size = new System.Drawing.Size(79, 26);
+            this.ProductYearCBox.Size = new System.Drawing.Size(66, 26);
             this.ProductYearCBox.TabIndex = 8;
+            this.ProductYearCBox.SelectedIndexChanged += new System.EventHandler(this.ProductYearCBox_SelectedIndexChanged);
             // 
             // ProductSearchTxt
             // 
             this.ProductSearchTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductSearchTxt.Location = new System.Drawing.Point(789, 298);
+            this.ProductSearchTxt.Location = new System.Drawing.Point(12, 256);
             this.ProductSearchTxt.Name = "ProductSearchTxt";
-            this.ProductSearchTxt.Size = new System.Drawing.Size(185, 24);
+            this.ProductSearchTxt.Size = new System.Drawing.Size(113, 24);
             this.ProductSearchTxt.TabIndex = 7;
             // 
             // SearchProductQtyChart
             // 
-            this.SearchProductQtyChart.Location = new System.Drawing.Point(12, 237);
+            this.SearchProductQtyChart.Location = new System.Drawing.Point(201, 237);
             this.SearchProductQtyChart.Name = "SearchProductQtyChart";
             this.SearchProductQtyChart.Size = new System.Drawing.Size(771, 117);
             this.SearchProductQtyChart.TabIndex = 6;
@@ -98,7 +100,7 @@
             // 
             this.SearchBtn.BackgroundImage = global::ADBMSpro01.Properties.Resources.searchBtn;
             this.SearchBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.SearchBtn.Location = new System.Drawing.Point(828, 375);
+            this.SearchBtn.Location = new System.Drawing.Point(41, 307);
             this.SearchBtn.Name = "SearchBtn";
             this.SearchBtn.Size = new System.Drawing.Size(113, 37);
             this.SearchBtn.TabIndex = 10;

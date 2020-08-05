@@ -19,6 +19,11 @@ namespace ADBMSpro01
         DBconnection dbcon = new DBconnection();
         SqlDataReader DR;
 
+        int[] hours = { 0,0,0,0,0,0,0,0,0,0,0,0};
+        int eid = -1;
+        int i = 0;
+
+
         public EmployeeDetailsForm()
         {
             InitializeComponent();
@@ -30,9 +35,9 @@ namespace ADBMSpro01
 
             string sql = "SELECT * FROM Employee";
 
-            SqlDataAdapter sqlDA = new SqlDataAdapter(sql, mycon);
-            DataSet ds = new DataSet();
-            sqlDA.Fill(ds, "Employee");
+            //SqlDataAdapter sqlDA = new SqlDataAdapter(sql, mycon);
+            //DataSet ds = new DataSet();
+            //sqlDA.Fill(ds, "Employee");
 
             mycon = dbcon.setCon();
 
@@ -117,7 +122,21 @@ namespace ADBMSpro01
 
             }
 
-            
+            //show Employee hours chart.
+
+            EmpWorkingHoursChart.AxisX.Add(new Axis
+            {
+                Title = "Month",
+                Labels = new[] { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" }
+            });
+
+            //set the Y axis.
+            EmpWorkingHoursChart.AxisY.Add(new Axis
+            {
+                Title = "Hours",
+                LabelFormatter = value => value.ToString()
+            });
+
 
         }
 
@@ -138,6 +157,77 @@ namespace ADBMSpro01
 
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void SearchBtn_Click(object sender, EventArgs e)
+        {
+            mycon = dbcon.setCon();
+            EmpNamesDataGridView.DataSource = null;
+            string sql = "SELECT Eid, Efname, Elname FROM Employee WHERE Efname = '" + EmpSearchTxt.Text + "'";
+
+            SqlDataAdapter sqlDA = new SqlDataAdapter(sql, mycon);
+            DataSet ds = new DataSet();
+            sqlDA.Fill(ds, "Employee");
+
+            EmpNamesDataGridView.DataSource = ds.Tables["Employee"];
+        }
+
+        private void EmpNamesDataGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            EmpWorkingHoursChart.Series.Clear();
+
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = EmpNamesDataGridView.Rows[e.RowIndex];
+                eid = (int)row.Cells[0].Value;
+            }
+
+            string sql = "select SUM(EWH) as total, MONTH(EWD)as month " +
+                "from EmployeeWorkHours " +
+                "WHERE Eid = "+eid+" " +
+                "GROUP BY MONTH(EWD) " +
+                "ORDER BY MONTH(EWD);";
+
+            //set Data TOTAL chart
+            mycon = dbcon.setCon();
+
+            using (mycon)
+            {
+                //read sql.
+                SqlCommand cmd = new SqlCommand(sql, mycon);
+                i = 0;
+                DR = cmd.ExecuteReader();
+                using (DR)
+                {
+                    while (DR.Read())
+                    {
+                        int value = (int)DR.GetInt32(0);
+                        hours[i] = value;
+                        i++;
+                    }
+                }
+                DR.Close();
+            }
+
+            //add series to chart.
+            EmpWorkingHoursChart.Series = new LiveCharts.SeriesCollection
+            {
+                    new LineSeries
+                    {
+                        Values = new ChartValues<float> {
+                            hours[0], hours[1], hours[2], hours[3], hours[4], hours[5], hours[6], hours[7], hours[8], hours[9], hours[10], hours[11]
+                        }
+                    },
+            };
+
+            //clear values.
+            while (i <= 11)
+            {
+                hours[i] = 0;
+                i++;
+            }
+            i = 0;
 
         }
     }

@@ -14,7 +14,7 @@ namespace ADBMSpro01
     public partial class EmployeeDeacvtivateForm : Form
     {
         private int eid = -1;
-        private String sts = "";
+        private String sts = null;
 
         public static SqlConnection mycon = null;
         DBconnection dbcon = new DBconnection();

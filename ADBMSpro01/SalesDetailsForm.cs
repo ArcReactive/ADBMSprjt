@@ -35,6 +35,11 @@ namespace ADBMSpro01
         int[] qtySpro = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         float[] totSpro = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
+        private void ProductYearCBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void Top5Chart_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
         {
 
@@ -373,8 +378,8 @@ namespace ADBMSpro01
 
             //Top 5 products chart DONE.
 
-            //Load QTY and TOTAL charts.
 
+            //Load QTY and TOTAL charts when form load.
             //QTY chart.
             //set the X axis.
             SearchProductQtyChart.AxisX.Add(new Axis

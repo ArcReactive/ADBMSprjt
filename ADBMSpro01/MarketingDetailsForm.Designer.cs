@@ -38,7 +38,7 @@
             // 
             // MarketingMonthChart
             // 
-            this.MarketingMonthChart.Location = new System.Drawing.Point(12, 243);
+            this.MarketingMonthChart.Location = new System.Drawing.Point(219, 259);
             this.MarketingMonthChart.Name = "MarketingMonthChart";
             this.MarketingMonthChart.Size = new System.Drawing.Size(756, 184);
             this.MarketingMonthChart.TabIndex = 0;
@@ -55,9 +55,9 @@
             // ProductNameTxt
             // 
             this.ProductNameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductNameTxt.Location = new System.Drawing.Point(774, 284);
+            this.ProductNameTxt.Location = new System.Drawing.Point(12, 293);
             this.ProductNameTxt.Name = "ProductNameTxt";
-            this.ProductNameTxt.Size = new System.Drawing.Size(200, 24);
+            this.ProductNameTxt.Size = new System.Drawing.Size(132, 24);
             this.ProductNameTxt.TabIndex = 2;
             this.ProductNameTxt.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
@@ -70,16 +70,16 @@
             "2018",
             "2019",
             "2020"});
-            this.ProductYearCBox.Location = new System.Drawing.Point(895, 314);
+            this.ProductYearCBox.Location = new System.Drawing.Point(150, 291);
             this.ProductYearCBox.Name = "ProductYearCBox";
-            this.ProductYearCBox.Size = new System.Drawing.Size(79, 26);
+            this.ProductYearCBox.Size = new System.Drawing.Size(63, 26);
             this.ProductYearCBox.TabIndex = 9;
             // 
             // SearchBtn
             // 
             this.SearchBtn.BackgroundImage = global::ADBMSpro01.Properties.Resources.searchBtn;
             this.SearchBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.SearchBtn.Location = new System.Drawing.Point(820, 359);
+            this.SearchBtn.Location = new System.Drawing.Point(60, 357);
             this.SearchBtn.Name = "SearchBtn";
             this.SearchBtn.Size = new System.Drawing.Size(113, 37);
             this.SearchBtn.TabIndex = 11;

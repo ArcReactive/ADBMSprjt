@@ -22,6 +22,8 @@ namespace ADBMSpro01
         public static SqlConnection myCon = null;
         SqlDataReader DR;
 
+        int i = 0;
+
         String p1 = "Empty", p2 = "Empty", p3 = "Empty", p4 = "Empty", p5 = "Empty";
 
         int[] pro1 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -47,7 +49,7 @@ namespace ADBMSpro01
 
             string Pname = ProductSearchTxt.Text;
             int year = 0;
-
+            
 
             if (ProductYearCBox.SelectedItem != null)
             {
@@ -107,6 +109,7 @@ namespace ADBMSpro01
             };
 
             //clear values.
+            i = 0;
             while (i <= 11)
             {
                 qtySpro[i] = 0;
@@ -160,7 +163,7 @@ namespace ADBMSpro01
             i = 0;
         }
 
-        int i = 0;
+        
 
         
 
@@ -183,7 +186,7 @@ namespace ADBMSpro01
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 DR = cmd.ExecuteReader();
-                int i = 0;
+                i = 0;
                 using (DR)
                 {
                     while (DR.Read())
@@ -207,7 +210,7 @@ namespace ADBMSpro01
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 DR = cmd.ExecuteReader();
-                int i = 0;
+                i = 0;
                 using (DR)
                 {
                     while (DR.Read())
@@ -231,7 +234,7 @@ namespace ADBMSpro01
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 DR = cmd.ExecuteReader();
-                int i = 0;
+                i = 0;
                 using (DR)
                 {
                     while (DR.Read())
@@ -255,7 +258,7 @@ namespace ADBMSpro01
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 DR = cmd.ExecuteReader();
-                int i = 0;
+                i = 0;
                 using (DR)
                 {
                     while (DR.Read())
@@ -279,7 +282,7 @@ namespace ADBMSpro01
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 DR = cmd.ExecuteReader();
-                int i = 0;
+                i = 0;
                 using (DR)
                 {
                     while (DR.Read())
@@ -340,6 +343,7 @@ namespace ADBMSpro01
             };
 
             //clear values.
+            i = 0;
             while (i <= 11)
             {
                 pro1[i] = 0;

@@ -93,6 +93,16 @@ namespace ADBMSpro01.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BtnCancel {
+            get {
+                object obj = ResourceManager.GetObject("BtnCancel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap clearBtn {
             get {
                 object obj = ResourceManager.GetObject("clearBtn", resourceCulture);
@@ -143,9 +153,39 @@ namespace ADBMSpro01.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap donePic {
+            get {
+                object obj = ResourceManager.GetObject("donePic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap emp {
             get {
                 object obj = ResourceManager.GetObject("emp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap goBtnPic {
+            get {
+                object obj = ResourceManager.GetObject("goBtnPic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loading {
+            get {
+                object obj = ResourceManager.GetObject("loading", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +226,26 @@ namespace ADBMSpro01.Properties {
         internal static System.Drawing.Bitmap marketing {
             get {
                 object obj = ResourceManager.GetObject("marketing", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap officeWorkGif {
+            get {
+                object obj = ResourceManager.GetObject("officeWorkGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap registerUserBtn {
+            get {
+                object obj = ResourceManager.GetObject("registerUserBtn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -375,7 +375,7 @@
             this.Datelbl.AutoSize = true;
             this.Datelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Datelbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Datelbl.Location = new System.Drawing.Point(12, 9);
+            this.Datelbl.Location = new System.Drawing.Point(19, 22);
             this.Datelbl.Name = "Datelbl";
             this.Datelbl.Size = new System.Drawing.Size(44, 20);
             this.Datelbl.TabIndex = 2;
@@ -386,7 +386,7 @@
             this.UserNamelbl.AutoSize = true;
             this.UserNamelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNamelbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.UserNamelbl.Location = new System.Drawing.Point(12, 43);
+            this.UserNamelbl.Location = new System.Drawing.Point(19, 58);
             this.UserNamelbl.Name = "UserNamelbl";
             this.UserNamelbl.Size = new System.Drawing.Size(51, 20);
             this.UserNamelbl.TabIndex = 1;

@@ -91,3 +91,6 @@ D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\bin\Debug\LiveCha
 D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\bin\Debug\LiveCharts.Wpf.xml
 D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.csproj.CopyComplete
 D:\01.Studies\github projects\ADBMS Prjct\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.csprojAssemblyReference.cache
+C:\Users\Nps\Documents\GitHub\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.Confirmation.resources
+C:\Users\Nps\Documents\GitHub\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.UserChanges.resources
+C:\Users\Nps\Documents\GitHub\ADBMSprjt\ADBMSpro01\obj\Debug\ADBMSpro01.LoadingForm.resources

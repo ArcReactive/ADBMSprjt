@@ -14,6 +14,9 @@ namespace ADBMSpro01
 {
     public partial class Dashboard : Form
     {
+        public static string user = null;
+        public static string privilage = null;
+
         //set empty
         private Form activeForm = null;
         public Dashboard()
@@ -74,6 +77,16 @@ namespace ADBMSpro01
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
+            //get name and privilage from login.
+            user = Login.Uname;
+            privilage = Login.Uprivilage;
+            //get date.
+            DateTime today = DateTime.Today;
+
+            //set user name and date
+            UserNamelbl.Text = user;
+            Datelbl.Text = today.ToString("dd/MM/yyyy");
+
             openFormPanel(new DashboardForm());
         }
 
@@ -86,8 +99,7 @@ namespace ADBMSpro01
 
         private void RevenuePBox_Click(object sender, EventArgs e)
         {
-            //DBconnection dBconnection = new DBconnection();
-            
+
         }
 
         private void SalesBtn_Click(object sender, EventArgs e)
@@ -124,37 +136,92 @@ namespace ADBMSpro01
 
         private void SalesDetailsBtn_Click(object sender, EventArgs e)
         {
-            openFormPanel(new SalesDetailsForm());
+            if (privilage == "admin" || privilage == "sales" || privilage == "marketing")
+            {
+                openFormPanel(new SalesDetailsForm());
+            }
+            else
+            {
+                MessageBox.Show("You have no Authorization");
+            }
         }
 
         private void AddSalesBtn_Click(object sender, EventArgs e)
         {
-            openFormPanel(new SalesAddForm());
+            if (privilage == "admin" || privilage == "sales")
+            {
+                openFormPanel(new SalesAddForm());
+            }
+            else
+            {
+                MessageBox.Show("You have no Authorization");
+            }
+            
         }
 
         private void EmployeeDetailsBtn_Click(object sender, EventArgs e)
         {
-            openFormPanel(new EmployeeDetailsForm());
+            if (privilage == "admin" || privilage == "sales" || privilage == "marketing" || privilage == "hr")
+            {
+                openFormPanel(new EmployeeDetailsForm());
+            }
+            else
+            {
+                MessageBox.Show("You have no Authorization");
+            }
+            
         }
 
         private void DeactivateBtn_Click(object sender, EventArgs e)
         {
-            openFormPanel(new EmployeeDeacvtivateForm());
+            if (privilage == "admin" || privilage == "hr")
+            {
+                openFormPanel(new EmployeeDeacvtivateForm());
+            }
+            else
+            {
+                MessageBox.Show("You have no Authorization");
+            }
+            
         }
 
         private void AddEmployeeBtn_Click(object sender, EventArgs e)
         {
-            openFormPanel(new EmployeeAddForm());
+            if (privilage == "admin" || privilage == "hr")
+            {
+                openFormPanel(new EmployeeAddForm());
+            }
+            else
+            {
+                MessageBox.Show("You have no Authorization");
+            }
+            
         }
 
         private void MarketingDetailsBtn_Click(object sender, EventArgs e)
         {
-            openFormPanel(new MarketingDetailsForm());
+            if (privilage == "admin" || privilage == "sales" || privilage == "marketing")
+            {
+                openFormPanel(new MarketingDetailsForm());
+            }
+            else
+            {
+                MessageBox.Show("You have no Authorization");
+            }
+            
         }
 
         private void AddMarketingBtn_Click(object sender, EventArgs e)
         {
-            openFormPanel(new MarketingAddForm());
+            if (privilage == "admin" || privilage == "marketing")
+            {
+                openFormPanel(new MarketingAddForm());
+            }
+            else
+            {
+                MessageBox.Show("You have no Authorization");
+            }
+            
         }
     }
 }

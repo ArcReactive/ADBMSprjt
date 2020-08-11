@@ -44,9 +44,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(38, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 18);
+            this.label1.Size = new System.Drawing.Size(162, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Sales Top 5 Product Details";
+            this.label1.Text = "Top 5 Product Sales";
             // 
             // Top5Chart
             // 

@@ -18,9 +18,8 @@ namespace ADBMSpro01
         public static SqlConnection myCon = null;
         SqlDataReader DR;
 
-        float[] salesValue = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        float[] costValue = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-
+        public static float[] salesValue = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        public static float[] costValue = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
         public DashboardForm()
         {

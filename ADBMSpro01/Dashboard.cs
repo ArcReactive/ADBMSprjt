@@ -109,8 +109,16 @@ namespace ADBMSpro01
 
         private void RevenueBtn_Click(object sender, EventArgs e)
         {
-            openFormPanel(new RevenueForm());
-            hideSubMenu();
+            if (privilage == "admin" || privilage == "sales" || privilage == "marketing")
+            {
+                openFormPanel(new RevenueForm());
+                hideSubMenu();
+            }
+            else
+            {
+                MessageBox.Show("You have no Authorization");
+            }
+            
         }
 
         private void EmployeeBtn_Click(object sender, EventArgs e)

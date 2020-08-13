@@ -9,6 +9,7 @@ namespace ADBMSpro01
     {
         public static string Uname = null;
         public static string Uprivilage = null;
+        public static string Ustatus = null;
 
         public Login()
         {
@@ -52,14 +53,20 @@ namespace ADBMSpro01
                 {
                     Uname = row["Uname"].ToString();
                     Uprivilage = row["Uprivilage"].ToString();
+                    Ustatus = row["Ustatus"].ToString();
                 }
 
-
-                //MessageBox.Show(privilage+" "+user);
-
-                Dashboard dashboard = new Dashboard();
-                dashboard.Show();
-                this.Hide();
+                if (Ustatus == "active")
+                {
+                    Dashboard dashboard = new Dashboard();
+                    dashboard.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Your account is deactivted.");
+                }
+                
                 //LoadingForm lf = new LoadingForm();
                 //lf.Show();
                 //this.Hide();

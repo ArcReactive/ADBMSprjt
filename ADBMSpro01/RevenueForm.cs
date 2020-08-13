@@ -15,9 +15,6 @@ namespace ADBMSpro01
 {
     public partial class RevenueForm : Form
     {
-        public static SqlConnection myCon = null;
-        SqlDataReader DR;
-
         float[] revenueValue = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
         float[] Dash_salesValue = DashboardForm.salesValue;
@@ -43,7 +40,7 @@ namespace ADBMSpro01
                     new LineSeries
                     {
                         Title = "Revenue",
-                        Values = new ChartValues<float> {
+                        Values = new ChartValues<double> {
                             revenueValue[0], revenueValue[1], revenueValue[2], revenueValue[3], revenueValue[4], revenueValue[5], revenueValue[6], revenueValue[7],revenueValue[8], revenueValue[9], revenueValue[10], revenueValue[11]
                         }
 

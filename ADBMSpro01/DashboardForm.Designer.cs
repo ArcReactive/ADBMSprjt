@@ -34,6 +34,9 @@
             this.RevenuePBox = new System.Windows.Forms.PictureBox();
             this.AllproductChart = new LiveCharts.WinForms.CartesianChart();
             this.label1 = new System.Windows.Forms.Label();
+            this.RevenueLbl = new System.Windows.Forms.Label();
+            this.EmpLbl = new System.Windows.Forms.Label();
+            this.CostLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MarketingPBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmpPBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RevenuePBox)).BeginInit();
@@ -97,11 +100,47 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "Products";
             // 
+            // RevenueLbl
+            // 
+            this.RevenueLbl.AutoSize = true;
+            this.RevenueLbl.BackColor = System.Drawing.Color.Transparent;
+            this.RevenueLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RevenueLbl.Location = new System.Drawing.Point(860, 46);
+            this.RevenueLbl.Name = "RevenueLbl";
+            this.RevenueLbl.Size = new System.Drawing.Size(16, 18);
+            this.RevenueLbl.TabIndex = 23;
+            this.RevenueLbl.Text = "0";
+            // 
+            // EmpLbl
+            // 
+            this.EmpLbl.AutoSize = true;
+            this.EmpLbl.BackColor = System.Drawing.Color.Transparent;
+            this.EmpLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpLbl.Location = new System.Drawing.Point(843, 128);
+            this.EmpLbl.Name = "EmpLbl";
+            this.EmpLbl.Size = new System.Drawing.Size(16, 18);
+            this.EmpLbl.TabIndex = 24;
+            this.EmpLbl.Text = "0";
+            // 
+            // CostLbl
+            // 
+            this.CostLbl.AutoSize = true;
+            this.CostLbl.BackColor = System.Drawing.Color.Transparent;
+            this.CostLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CostLbl.Location = new System.Drawing.Point(860, 203);
+            this.CostLbl.Name = "CostLbl";
+            this.CostLbl.Size = new System.Drawing.Size(16, 18);
+            this.CostLbl.TabIndex = 25;
+            this.CostLbl.Text = "0";
+            // 
             // DashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(986, 470);
+            this.Controls.Add(this.CostLbl);
+            this.Controls.Add(this.EmpLbl);
+            this.Controls.Add(this.RevenueLbl);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.AllproductChart);
             this.Controls.Add(this.MarketingPBox);
@@ -127,5 +166,8 @@
         private LiveCharts.WinForms.CartesianChart SalesChart;
         private LiveCharts.WinForms.CartesianChart AllproductChart;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label RevenueLbl;
+        private System.Windows.Forms.Label EmpLbl;
+        private System.Windows.Forms.Label CostLbl;
     }
 }

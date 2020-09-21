@@ -46,24 +46,33 @@ namespace ADBMSpro01
 
         private void BtnSave_Click(object sender, EventArgs e)
         {
-            mycon = dbcon.setCon();
+            if (txtMDescription.Text !=null && txtMcost.Text != null)
+            {
+                mycon = dbcon.setCon();
 
-            string sql = "INSERT INTO Marketing " +
-                "(Mdescription,Mcost,Mdate) " +
-                "VALUES ('" + txtMDescription.Text + "', " + float.Parse(txtMcost.Text) + ", '" + MdateTimePicker.Value.Date + "')";
+                string sql = "INSERT INTO Marketing " +
+                    "(Mdescription,Mcost,Mdate) " +
+                    "VALUES ('" + txtMDescription.Text + "', " + float.Parse(txtMcost.Text) + ", '" + MdateTimePicker.Value.Date + "')";
 
-            SqlCommand cmd = new SqlCommand(sql, mycon);
+                SqlCommand cmd = new SqlCommand(sql, mycon);
 
-            cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
 
-            MessageBox.Show("New Marketing Cost added successfull.");
-
+                MessageBox.Show("New Marketing Cost added successfull.");
+            }
+            else
+            {
+                MessageBox.Show("Empty field.");
+            }
+            
             loadGrid();
         }
 
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
-            mycon = dbcon.setCon();
+            if (txtMDescription.Text != null && txtMcost.Text != null)
+            {
+                mycon = dbcon.setCon();
 
             string sql = "UPDATE Marketing SET " +
                 "Mdescription = '" + txtMDescription.Text + "', " +
@@ -74,7 +83,11 @@ namespace ADBMSpro01
             SqlCommand cmd = new SqlCommand(sql, mycon);
 
             cmd.ExecuteNonQuery();
-
+            }
+            else
+            {
+                MessageBox.Show("Empty field.");
+            }
             loadGrid();
         }
 
@@ -91,15 +104,23 @@ namespace ADBMSpro01
 
         private void btnMarketingSearchPB_Click(object sender, EventArgs e)
         {
-            mycon = dbcon.setCon();
-            showMarketingTableDataGridView.DataSource = null;
-            string sql = "SELECT * FROM Marketing WHERE Mdescription  = '" + txtSearch.Text + "' ";
+            if (txtSearch.Text != null)
+            {
+                mycon = dbcon.setCon();
+                showMarketingTableDataGridView.DataSource = null;
+                string sql = "SELECT * FROM Marketing WHERE Mdescription  = '" + txtSearch.Text + "' ";
 
-            SqlDataAdapter sqlDA = new SqlDataAdapter(sql, mycon);
-            DataSet ds = new DataSet();
-            sqlDA.Fill(ds, "Marketing");
+                SqlDataAdapter sqlDA = new SqlDataAdapter(sql, mycon);
+                DataSet ds = new DataSet();
+                sqlDA.Fill(ds, "Marketing");
 
-            showMarketingTableDataGridView.DataSource = ds.Tables["Marketing"];
+                showMarketingTableDataGridView.DataSource = ds.Tables["Marketing"];
+            }
+            else
+            {
+                MessageBox.Show("Empty search field.");
+            }
+
 
             txtSearch.Text = null;
         }

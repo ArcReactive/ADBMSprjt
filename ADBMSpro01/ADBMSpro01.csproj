@@ -70,6 +70,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ADBMSpro1DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Confirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirmation.Designer.cs">
+      <DependentUpon>Confirmation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,12 @@
     </Compile>
     <Compile Include="EmployeeDetailsForm.Designer.cs">
       <DependentUpon>EmployeeDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -139,6 +151,15 @@
     <Compile Include="SalesDetailsForm.Designer.cs">
       <DependentUpon>SalesDetailsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserChanges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserChanges.Designer.cs">
+      <DependentUpon>UserChanges.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Confirmation.resx">
+      <DependentUpon>Confirmation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeDetailsForm.resx">
       <DependentUpon>EmployeeDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -181,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SalesDetailsForm.resx">
       <DependentUpon>SalesDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserChanges.resx">
+      <DependentUpon>UserChanges.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ADBMSpro1DataSet.xsc">
       <DependentUpon>ADBMSpro1DataSet.xsd</DependentUpon>
@@ -232,6 +259,12 @@
     <None Include="Resources\deleteBtn.png" />
     <None Include="Resources\deactivateBtn.png" />
     <None Include="Resources\activateBtn.png" />
+    <None Include="Resources\registerUserBtn.png" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\officeWorkGif.gif" />
+    <None Include="Resources\goBtnPic.gif" />
+    <None Include="Resources\donePic.gif" />
+    <None Include="Resources\BtnCancel.png" />
     <Content Include="Resources\rev.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

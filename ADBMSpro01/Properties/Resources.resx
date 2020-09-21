@@ -124,17 +124,32 @@
   <data name="deleteBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\deleteBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="officeWorkGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\officeWorkGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="rev" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rev.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deactiveBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deactiveBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="registerUserBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\registerUserBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="emp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\emp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="searchBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\searchBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="close icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="deactiveBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\deactiveBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="6785982_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6785982_preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="goBtnPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goBtnPic.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="log icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\log icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,8 +160,11 @@
   <data name="rev1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rev.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="6785982_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6785982_preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="donePic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\donePic.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="activateBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\activateBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="marketing" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\marketing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,13 +184,13 @@
   <data name="saveBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\saveBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="close icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="searchBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\searchBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="activateBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\activateBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BtnCancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BtnCancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

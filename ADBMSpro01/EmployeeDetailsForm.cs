@@ -33,7 +33,7 @@ namespace ADBMSpro01
         {
             mycon = dbcon.setCon();
 
-            string sql = "SELECT * FROM Employee";
+            //string sql = "SELECT * FROM Employee";
 
             //SqlDataAdapter sqlDA = new SqlDataAdapter(sql, mycon);
             //DataSet ds = new DataSet();

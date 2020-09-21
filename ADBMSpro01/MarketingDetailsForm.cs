@@ -167,7 +167,7 @@ namespace ADBMSpro01
                     new LineSeries
                     {
                         Title = ""+p1,
-                        Values = new ChartValues<float> {
+                        Values = new ChartValues<double> {
                             costpro1[0],costpro1[1],costpro1[2],costpro1[3],costpro1[4],costpro1[5],costpro1[6],costpro1[7],costpro1[8],costpro1[9],costpro1[10],costpro1[11]
                         }
 
@@ -176,7 +176,7 @@ namespace ADBMSpro01
                     new LineSeries
                     {
                         Title = ""+p2,
-                        Values = new ChartValues<float> {
+                        Values = new ChartValues<double> {
                             costpro2[0],costpro2[1],costpro2[2],costpro2[3],costpro2[4],costpro2[5],costpro2[6],costpro2[7],costpro2[8],costpro2[9],costpro2[10],costpro2[11]
                         }
                     },
@@ -184,7 +184,7 @@ namespace ADBMSpro01
                     new LineSeries
                     {
                         Title = ""+p3,
-                        Values = new ChartValues<float> {
+                        Values = new ChartValues<double> {
                             costpro3[0],costpro3[1],costpro3[2],costpro3[3],costpro3[4],costpro3[5],costpro3[6],costpro3[7],costpro3[8],costpro3[9],costpro3[10],costpro3[11]
                         }
                     },
@@ -192,7 +192,7 @@ namespace ADBMSpro01
                     new LineSeries
                     {
                         Title = ""+p4,
-                        Values = new ChartValues<float> {
+                        Values = new ChartValues<double> {
                             costpro4[0],costpro4[1],costpro4[2],costpro4[3],costpro4[4],costpro4[5],costpro4[6],costpro4[7],costpro4[8],costpro4[9],costpro4[10],costpro4[11]
                         }
                     },
@@ -200,7 +200,7 @@ namespace ADBMSpro01
                     new LineSeries
                     {
                         Title = ""+p5,
-                        Values = new ChartValues<float> {
+                        Values = new ChartValues<double> {
                             costpro5[0],costpro5[1],costpro5[2],costpro5[3],costpro5[4],costpro5[5],costpro5[6],costpro5[7],costpro5[8],costpro5[9],costpro5[10],costpro5[11]
                         }
                     },
@@ -230,7 +230,7 @@ namespace ADBMSpro01
             Product5Chart.AxisY.Add(new Axis
             {
                 Title = "Quantity",
-                LabelFormatter = value => value.ToString()
+                LabelFormatter = value => value.ToString("n2")
             });
 
             Product5Chart.LegendLocation = LegendLocation.Right;
@@ -251,7 +251,7 @@ namespace ADBMSpro01
             MarketingMonthChart.AxisY.Add(new Axis
             {
                 Title = "Price",
-                LabelFormatter = value => value.ToString("C")
+                LabelFormatter = value => value.ToString("C2")
             });
 
             MarketingMonthChart.LegendLocation = LegendLocation.Right;

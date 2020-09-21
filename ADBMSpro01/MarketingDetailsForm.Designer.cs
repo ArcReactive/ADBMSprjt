@@ -33,6 +33,7 @@
             this.ProductNameTxt = new System.Windows.Forms.TextBox();
             this.ProductYearCBox = new System.Windows.Forms.ComboBox();
             this.SearchBtn = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.SearchBtn)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,11 +87,22 @@
             this.SearchBtn.TabStop = false;
             this.SearchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(51, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(156, 18);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Top 5 Product Cost";
+            // 
             // MarketingDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(986, 470);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.SearchBtn);
             this.Controls.Add(this.ProductYearCBox);
             this.Controls.Add(this.ProductNameTxt);
@@ -112,5 +124,6 @@
         private System.Windows.Forms.TextBox ProductNameTxt;
         private System.Windows.Forms.ComboBox ProductYearCBox;
         private System.Windows.Forms.PictureBox SearchBtn;
+        private System.Windows.Forms.Label label1;
     }
 }

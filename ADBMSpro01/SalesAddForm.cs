@@ -37,6 +37,14 @@ namespace ADBMSpro01
             SalesDataGridView.DataSource = ds.Tables["Sales"];
         }
 
+        private void clear()
+        {
+            PnameTxt.Text = null;
+            PqtyTxt.Text = null;
+            PcostTxt.Text = null;
+            SearchSalesTxt.Text = null;
+        }
+
         private void SalesAddForm_Load(object sender, EventArgs e)
         {
             loadData();
@@ -44,86 +52,102 @@ namespace ADBMSpro01
 
         private void SearchSalesPBox_Click(object sender, EventArgs e)
         {
-            myCon = dbcon.setCon();
+            if (SearchSalesTxt.Text != null)
+            {
+                myCon = dbcon.setCon();
 
-            string sql = "SELECT * FROM Sales WHERE Pname = '" + SearchSalesTxt.Text + "'";
+                string sql = "SELECT * FROM Sales WHERE Pname = '" + SearchSalesTxt.Text + "'";
 
-            SqlDataAdapter sqlDA = new SqlDataAdapter(sql, myCon);
-            DataSet ds = new DataSet();
-            sqlDA.Fill(ds, "Sales");
+                SqlDataAdapter sqlDA = new SqlDataAdapter(sql, myCon);
+                DataSet ds = new DataSet();
+                sqlDA.Fill(ds, "Sales");
 
-            SalesDataGridView.DataSource = ds.Tables["Sales"];
+                SalesDataGridView.DataSource = ds.Tables["Sales"];
+            }
+            else
+            {
+                MessageBox.Show("Empty search field.");
+            }
 
-            SearchSalesTxt.Text = null;
         }
 
         private void UpdateBtn_Click(object sender, EventArgs e)
         {
-            myCon = dbcon.setCon();
-
-            string pname = PnameTxt.Text;
-            int pqty = int.Parse(PqtyTxt.Text);
-            float pcost = float.Parse(PcostTxt.Text);
-            float ptotal = pqty * pcost;
-
-            string sql = "UPDATE Sales SET " +
-                "Pname = '"+pname+"', " +
-                "Quantity = '"+pqty+"', " +
-                "Pcost = "+pcost+", " +
-                "Total = "+ptotal+", " +
-                "Sdate = '"+SdateDTP.Value.Date+"' " +
-                "WHERE Sid = "+id+"";
-
-            SqlCommand cmd = new SqlCommand(sql, myCon);
-
-            int c = cmd.ExecuteNonQuery();
-            if (c !=0 )
+            if (PnameTxt.Text != null && PqtyTxt.Text != null && PcostTxt.Text != null)
             {
-                MessageBox.Show("Sales Details Update Successfull.");
+                myCon = dbcon.setCon();
+
+                string pname = PnameTxt.Text;
+                int pqty = int.Parse(PqtyTxt.Text);
+                float pcost = float.Parse(PcostTxt.Text);
+                float ptotal = pqty * pcost;
+
+                string sql = "UPDATE Sales SET " +
+                    "Pname = '" + pname + "', " +
+                    "Quantity = '" + pqty + "', " +
+                    "Pcost = " + pcost + ", " +
+                    "Total = " + ptotal + ", " +
+                    "Sdate = '" + SdateDTP.Value.Date + "' " +
+                    "WHERE Sid = " + id + "";
+
+                SqlCommand cmd = new SqlCommand(sql, myCon);
+
+                int c = cmd.ExecuteNonQuery();
+                if (c != 0)
+                {
+                    MessageBox.Show("Sales Details Update Successfull.");
+                }
+                else
+                {
+                    MessageBox.Show("Sales Details NOT Update.");
+                }
+
+                loadData();
+                clear();
             }
             else
             {
-                MessageBox.Show("Sales Details NOT Update.");
+                MessageBox.Show("Empty field.");
             }
 
-            loadData();
-
-            PnameTxt.Text = null;
-            PqtyTxt.Text = null;
-            PcostTxt.Text = null;
-            loadData();
         }
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-            myCon = dbcon.setCon();
+            if (PnameTxt.Text != null && PqtyTxt.Text != null && PcostTxt.Text != null)
+            {
+                myCon = dbcon.setCon();
 
-            string pname = PnameTxt.Text;
-            int pqty = int.Parse(PqtyTxt.Text);
-            float pcost = float.Parse(PcostTxt.Text);
-            float ptotal = pqty * pcost;
+                string pname = PnameTxt.Text;
+                int pqty = int.Parse(PqtyTxt.Text);
+                float pcost = float.Parse(PcostTxt.Text);
+                float ptotal = pqty * pcost;
 
-            string sql = "INSERT INTO Sales " +
-                "(Pname,Quantity,Pcost,Total,Sdate) " +
-                "VALUES ('" + pname + "', " + pqty + ", " + pcost + ", " + ptotal + ", '"+ SdateDTP.Value.Date +"')";
+                string sql = "INSERT INTO Sales " +
+                    "(Pname,Quantity,Pcost,Total,Sdate) " +
+                    "VALUES ('" + pname + "', " + pqty + ", " + pcost + ", " + ptotal + ", '" + SdateDTP.Value.Date + "')";
 
-            SqlCommand cmd = new SqlCommand(sql, myCon);
+                SqlCommand cmd = new SqlCommand(sql, myCon);
 
-            cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
 
-            MessageBox.Show("New Sales Details added successfull.");
+                MessageBox.Show("New Sales Details added successfull.");
 
-            loadData();
+                loadData();
+                clear();
+            }
+            else
+            {
+                MessageBox.Show("Empty field.");
+            }
 
-            PnameTxt.Text = null;
-            PqtyTxt.Text = null;
-            PcostTxt.Text = null;
 
         }
 
         private void ClearBtn_Click(object sender, EventArgs e)
         {
             loadData();
+            clear();
         }
 
         private void SalesDataGridView_MouseClick(object sender, MouseEventArgs e)

@@ -18,10 +18,14 @@ namespace ADBMSpro01
         public static SqlConnection myCon = null;
         SqlDataReader DR;
 
-        float[] salesValue = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        float[] costValue = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        public static float[] salesValue = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        public static float[] costValue = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
+        float rev = 0, cost = 0;
+        int emp = 0;
 
+        //connection.
+        DBconnection dbcon = new DBconnection();
         public DashboardForm()
         {
             InitializeComponent();
@@ -32,8 +36,6 @@ namespace ADBMSpro01
 
             //SALES and COST chart.
 
-            //connection.
-            DBconnection dbcon = new DBconnection();
             myCon = dbcon.setCon();
 
             //set sales.
@@ -80,6 +82,8 @@ namespace ADBMSpro01
                     }
                 }
                 DR.Close();
+
+                
             }
 
             //add two series to chart.
@@ -89,7 +93,7 @@ namespace ADBMSpro01
                     new LineSeries
                     {
                         Title = "Sales",
-                        Values = new ChartValues<float> {
+                        Values = new ChartValues<double> {
                             salesValue[0], salesValue[1], salesValue[2], salesValue[3], salesValue[4], salesValue[5], salesValue[6], salesValue[7], salesValue[8], salesValue[9], salesValue[10], salesValue[11]
                         }
 
@@ -155,6 +159,44 @@ namespace ADBMSpro01
 
                 DR.Close();
             }
+
+            //get full revenue.
+            for (int j = 0; j < 12; j++)
+            {
+                rev += (salesValue[j] - costValue[j]);
+            }
+
+            //get emp count.
+            employeeCount();
+
+            //get full cost.
+            for (int j = 0; j < 12; j++)
+            {
+                cost += costValue[j];
+            }
+
+            //load data to lables.
+            RevenueLbl.Text = rev.ToString("n2");
+            EmpLbl.Text = emp.ToString();
+            CostLbl.Text = cost.ToString("n2");
+
+
+        }
+
+        private void employeeCount()
+        {
+            myCon = dbcon.setCon();
+            string sql = "SELECT * FROM Employee WHERE Estatus = 'active'";
+
+            SqlCommand cmd = new SqlCommand(sql, myCon);
+            DR = cmd.ExecuteReader();
+
+            while (DR.Read())
+            {
+                emp++;
+            }
+            DR.Close();
+
         }
 
         private void SalesChart_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
